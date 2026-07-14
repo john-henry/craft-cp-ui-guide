@@ -7,7 +7,7 @@ The most useful custom properties for extension authors. Consume these rather th
 | `--ui-control-height` | 34px | Standard height for inputs & buttons |
 | `--ui-control-height-small` | 30px | Compact controls |
 | `--radius-lg` | 5px | Control corners |
-| `--text-color` | `--gray-700` | Body text |
+| `--size-line-height` | `1.42em` | Base line-height |
 | `--fg-subtle` | `--gray-550` | Instructions, secondary labels |
 | `--fg-input` | hsl(212 25% 50%) | Input border color |
 | `--border-hairline` | gray-800 @ 10% | Row dividers |

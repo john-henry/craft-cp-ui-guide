@@ -6,7 +6,7 @@ The biggest win for a plugin that manages its own element type: don’t rebuild 
 <div class="demo" style="padding:0; border:0">
 <div class="el-index">
 <div class="el-sources"><span class="src sel">All products</span><span class="src">Active</span><span class="src">Draft</span><span class="src">Archived</span></div>
-<div class="el-toolbar"><div class="search" style="max-width:220px"><input placeholder="Search…" type="text"/></div><span style="flex:1"></span><a class="btn submit"><svg class="ic"><use href="#i-external"></use></svg> New product</a></div>
+<div class="el-toolbar"><div class="search-container" style="max-width:220px"><input placeholder="Search…" type="text"/></div><span style="flex:1"></span><a class="btn submit"><svg class="ic"><use href="#i-external"></use></svg> New product</a></div>
 <table class="data" style="border:0; border-radius:0">
 <thead><tr><th>Title</th><th>Status</th><th>Options</th><th>Variants</th></tr></thead>
 <tbody>

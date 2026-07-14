@@ -42,7 +42,7 @@ The default. Related entries stack as draggable rows with a status dot and label
 
 ## Assets field — thumbnail view
 
-Assets fields default to `viewMode: "large"` (thumbnails). With `maxRelations: 1` the field accepts a single image — a common “featured image” setup.
+Assets fields default to a thumbnail view. Note that `viewMode: "large"` is a legacy alias Craft remaps to `"thumbs"` (`BaseRelationField::normalizeConfig()`), so `"thumbs"` is the real value. With `maxRelations: 1` the field accepts a single image — a common “featured image” setup.
 
 <div class="cp-demo" markdown="0">
 <div class="demo">
@@ -67,7 +67,7 @@ Assets fields default to `viewMode: "large"` (thumbnails). With `maxRelations: 1
     name: "featuredImage",
     elementType: "craft\\elements\\Asset",
     elements: entry.featuredImage.all(),
-    viewMode: "large",      // thumbnails
+    viewMode: "thumbs",     // thumbnails ("large" is a legacy alias)
     limit: 1,               // single selection
     selectionLabel: "Choose an image"|t("my-plugin"),
     sources: ["volume:uploads"],
@@ -99,4 +99,4 @@ Set `viewMode: "cards"` for a richer chip that shows a thumbnail plus secondary 
 | Preview mode | `previewMode` (Assets) | `full` shows the filename label; `thumbs` is image-only |
 
 !!! note
-    **Same UI for custom element types.** If your plugin defines its own element, a relation field pointing at it renders with this exact `elementSelect`. Implement your element’s `chipHtml()` / `cardHtml()` (via `craft\base\Element`) to control how it appears in each view mode.
+    **Same UI for custom element types.** If your plugin defines its own element, a relation field pointing at it renders with this exact `elementSelect`. Override your element’s `attributeHtml()`, `getChipLabelHtml()`, and `getCardBodyHtml()` (on `craft\base\Element`) to control how it appears in each view mode. (There is no `chipHtml()` / `cardHtml()` to override — those are static renderers on `craft\helpers\Cp`.)

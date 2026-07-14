@@ -13,9 +13,15 @@ Craft 5 addresses (used by Commerce for billing/shipping and by the core for use
 </div>
 
 ```twig
-{# Craft formats the address per-country for you #}
-{{ cp.addressCardHtml(address)|raw }}
+{# An address is an element, so render it as a card (or chip) #}
+{{ elementCard(address) }}
+{{ elementChip(address) }}
+```
 
-{# Or a full editable fieldset: #}
-{{ cp.addressFieldsHtml(address)|raw }}
+```php
+// The editable fieldset is a PHP helper — there is no `cp.*` Twig
+// equivalent, so render it from a controller/behavior and pass the HTML in:
+use craft\helpers\Cp;
+
+$fieldsetHtml = Cp::addressFieldsHtml($address);
 ```

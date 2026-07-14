@@ -11,7 +11,8 @@ The full set of form macros exported from `_includes/forms`. Nearly all have a b
 | `selectize` / `selectizeField` | Searchable / taggable menu |
 | `multiselect` / `multiselectField` | Multi-value select |
 | `checkbox` / `checkboxField` | Single checkbox |
-| `checkboxGroup` / `checkboxSelect` | Group of checkboxes |
+| `checkboxGroup` / `checkboxGroupField` | Group of checkboxes |
+| `checkboxSelect` / `checkboxSelectField` | Checkbox group in a menu |
 | `radioGroup` / `radioGroupField` | Radio button set |
 | `lightswitch` / `lightswitchField` | On/off toggle |
 | `button` / `submitButton` | Buttons |
