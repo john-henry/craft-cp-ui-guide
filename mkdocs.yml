@@ -1,7 +1,7 @@
 site_name: Craft CMS CP — UI & Brand Guide
 site_description: An unofficial, reverse-engineered reference to the Craft CMS 5.x control-panel UI for plugin & module developers.
-site_url: https://john-henry.github.io/craft-cp-guide/
-repo_url: https://github.com/john-henry/craft-cp-guide
+site_url: https://john-henry.github.io/craft-cp-ui-guide/
+repo_url: https://github.com/john-henry/craft-cp-ui-guide
 edit_uri: edit/main/docs/
 
 theme:

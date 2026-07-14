@@ -12,7 +12,7 @@ field types, and element indexes look native to Craft.
 
 ## Live site
 
-[https://john-henry.github.io/craft-cp-guide/](https://john-henry.github.io/craft-cp-guide/)
+[https://john-henry.github.io/craft-cp-ui-guide/](https://john-henry.github.io/craft-cp-ui-guide/)
 
 ## What's inside
 
