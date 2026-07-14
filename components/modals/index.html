@@ -1546,38 +1546,43 @@
 
 
 <h1 id="modals-huds">Modals &amp; HUDs<a class="headerlink" href="#modals-huds" title="Permanent link">&para;</a></h1>
-<p>Craft floats transient UI in a <strong>modal</strong> — a white card with an optional gray <code>.header</code>, a <code>.body</code>, and a right-aligned <code>.footer</code> of actions — over a dark <em>shade</em>. Alerts add a warning glyph; the smaller <strong>HUD</strong> is a popover anchored to a trigger. Modals are driven by JavaScript (<code>Garnish.Modal</code> / <code>Craft.CpModal</code>), so the markup below is what you place inside the floated container.</p>
+<p>Craft floats transient UI in a <strong>modal</strong> over a dark <code>.modal-shade</code> overlay. A bare <code>Garnish.Modal</code> is just a <code>.modal</code> card you fill yourself — <code>.body</code> is the conventional content class, and there is <strong>no</strong> <code>.header</code> or <code>.footer</code> class. The higher-level <code>Craft.CpModal</code> adds structure: a <code>.cpmodal-body</code> (wrapping <code>.cpmodal-content</code>) plus a <code>.cpmodal-footer</code> for the action buttons. Alerts add a warning glyph; the smaller <strong>HUD</strong> is a popover anchored to a trigger.</p>
 <h2 id="standard-modal">Standard modal<a class="headerlink" href="#standard-modal" title="Permanent link">&para;</a></h2>
 <div class="cp-demo" markdown="0">
 <div class="demo">
 <div class="modal-stage shaded">
-<div class="modal">
-<div class="header"><h1>Choose a new entry type</h1></div>
-<div class="body">
+<div class="cpmodal modal">
+<div class="cpmodal-body"><div class="cpmodal-content">
+<h1>Choose a new entry type</h1>
 <p>Select which entry type to add to this section. You can reorder and rename types later in the section’s settings.</p>
-</div>
-<div class="footer"><button class="btn">Cancel</button><button class="btn submit">Add</button></div>
+</div></div>
+<div class="cpmodal-footer"><button class="btn">Cancel</button><button class="btn submit">Add</button></div>
 </div>
 </div>
 </div>
 </div>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;header&quot;</span><span class="p">&gt;&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Choose a new entry type<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;body&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Select which entry type to add…<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;footer&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>Cancel<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn submit&quot;</span><span class="p">&gt;</span>Add<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>// Float it over a shade and manage focus/escape:
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>new Garnish.Modal($container, { resizable: false });
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;cpmodal modal&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;cpmodal-body&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;cpmodal-content&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Choose a new entry type<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Select which entry type to add…<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;cpmodal-footer&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>Cancel<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn submit&quot;</span><span class="p">&gt;</span>Add<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>// Craft.CpModal builds this structure for you and manages focus/escape:
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>new Craft.CpModal(/* … */);
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>// A bare Garnish.Modal just floats a .modal — you supply the .body:
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>new Garnish.Modal($container, { resizable: false });
 </code></pre></div>
 <h2 id="alert-modal">Alert modal<a class="headerlink" href="#alert-modal" title="Permanent link">&para;</a></h2>
-<p>Add <code>.alert</code> to the modal (or use <code>Craft.confirm()</code>) to inset a warning icon beside the body — the pattern for destructive confirmations.</p>
+<p>Add <code>.alert</code> to a bare modal to inset a warning icon beside the body — the pattern for destructive confirmations. (There is no <code>Craft.confirm()</code> helper; for a plain yes/no, wire a native <code>confirm()</code> through a <code>data-confirm</code> attribute.)</p>
 <div class="cp-demo" markdown="0">
 <div class="demo">
 <div class="modal-stage shaded">
@@ -1585,7 +1590,7 @@
 <div class="body"><span class="alert-ic"><svg class="ic"><use href="#i-warning"></use></svg></span>
 <p>Are you sure you want to delete “Spring Sale” and all of its related content? This can’t be undone.</p>
 </div>
-<div class="footer"><button class="btn">Cancel</button><button class="btn submit" style="--red-600:#dc2626">Delete</button></div>
+<div class="buttons right"><button class="btn">Cancel</button><button class="btn submit" style="--red-600:#dc2626">Delete</button></div>
 </div>
 </div>
 </div>
@@ -1615,6 +1620,10 @@
 <td>Base card. Sizes to 66% of the viewport unless modified</td>
 </tr>
 <tr>
+<td><code>.modal .body</code></td>
+<td>Conventional content region of a bare modal (there is no <code>.header</code> / <code>.footer</code> class)</td>
+</tr>
+<tr>
 <td><code>.modal.fitted</code></td>
 <td>Shrinks to its content instead of a fixed size</td>
 </tr>
@@ -1625,6 +1634,10 @@
 <tr>
 <td><code>.modal.alert</code></td>
 <td>Insets a warning icon beside the body</td>
+</tr>
+<tr>
+<td><code>.cpmodal</code></td>
+<td>Structured modal built by <code>Craft.CpModal</code>: <code>.cpmodal-body</code> › <code>.cpmodal-content</code> + <code>.cpmodal-footer</code></td>
 </tr>
 <tr>
 <td><code>.hud</code></td>
@@ -1688,7 +1701,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

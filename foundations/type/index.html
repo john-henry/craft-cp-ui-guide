@@ -1435,20 +1435,20 @@
 
 
 <h1 id="typography">Typography<a class="headerlink" href="#typography" title="Permanent link">&para;</a></h1>
-<p>The CP uses the platform system-UI stack — no web fonts to load. Base size is <strong>14px</strong> with a <strong>1.42</strong> line-height, and body text sits at <code>--gray-700</code>. Headings darken to <code>--gray-900</code>; secondary text lightens to <code>--gray-550</code> (<code>--fg-subtle</code>).</p>
+<p>The CP uses the platform system-UI stack — no web fonts to load. Body text renders at roughly <strong>14px</strong> with <code>--size-line-height: 1.42em</code>; secondary text uses <code>--fg-subtle</code> (<code>var(--gray-550)</code>). The pixel sizes here are rendered values applied at runtime — Craft doesn't expose a <code>--font-size</code> token, so match against the tokens that <em>do</em> exist (<code>--size-line-height</code>, <code>--fg-subtle</code>, and the <code>--gray-*</code> scale) rather than hard-coding sizes.</p>
 <div class="cp-demo" markdown="0">
 <div class="demo">
 <div style="font-size:22px; color:var(--gray-900); font-weight:700; letter-spacing:-.01em">Heading — section title</div>
 <div style="font-size:16px; color:var(--gray-800); font-weight:600; margin-top:10px">Subheading — field group label</div>
 <p style="margin:10px 0 0; max-width:60ch">Body copy at the base 14px / 1.42 rhythm in <code>--gray-700</code>. This is the default for instructions, help text, and table cells. Links appear in <a href="#">sky blue</a>.</p>
-<p style="margin:8px 0 0; color:var(--fg-subtle); font-size:12.5px">Subtle / instructions text — 12.5px, <code>--fg-subtle</code>. Used under labels.</p>
+<p style="margin:8px 0 0; color:var(--fg-subtle); font-size:12.5px">Subtle / instructions text — <code>--fg-subtle</code>. Used under labels.</p>
 <p style="margin:8px 0 0; font-family:var(--mono); font-size:13px; background:var(--gray-050); display:inline-block; padding:2px 7px; border-radius:4px">Monospace for code, handles &amp; tokens</p>
 </div>
 </div>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">--font-size</span><span class="o">:</span><span class="w"> </span><span class="nt">14px</span><span class="o">;</span><span class="w">      </span><span class="c">/* base */</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">--lh</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="p">.</span><span class="nc">42em</span><span class="o">;</span><span class="w">          </span><span class="c">/* line-height */</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">--text-color</span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--gray-700</span><span class="o">);</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">--size-line-height</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="p">.</span><span class="nc">42em</span><span class="o">;</span><span class="w">    </span><span class="c">/* real CP token */</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">--fg-subtle</span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--gray-550</span><span class="o">);</span><span class="w">  </span><span class="c">/* secondary / instructions text */</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c">/* Base font-size (~14px) is applied at runtime — there is no --font-size token */</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="nt">system-ui</span><span class="o">,</span><span class="w"> </span><span class="nt">BlinkMacSystemFont</span><span class="o">,</span><span class="w"> </span><span class="nt">-apple-system</span><span class="o">,</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">             </span><span class="s2">&quot;Segoe UI&quot;</span><span class="o">,</span><span class="w"> </span><span class="nt">Roboto</span><span class="o">,</span><span class="w"> </span><span class="nt">sans-serif</span><span class="o">;</span>
 </code></pre></div>
@@ -1508,7 +1508,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

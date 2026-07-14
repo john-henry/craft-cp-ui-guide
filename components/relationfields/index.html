@@ -1580,7 +1580,7 @@
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="o">})</span> <span class="cp">}}</span>
 </code></pre></div>
 <h2 id="assets-field-thumbnail-view">Assets field — thumbnail view<a class="headerlink" href="#assets-field-thumbnail-view" title="Permanent link">&para;</a></h2>
-<p>Assets fields default to <code>viewMode: "large"</code> (thumbnails). With <code>maxRelations: 1</code> the field accepts a single image — a common “featured image” setup.</p>
+<p>Assets fields default to a thumbnail view. Note that <code>viewMode: "large"</code> is a legacy alias Craft remaps to <code>"thumbs"</code> (<code>BaseRelationField::normalizeConfig()</code>), so <code>"thumbs"</code> is the real value. With <code>maxRelations: 1</code> the field accepts a single image — a common “featured image” setup.</p>
 <div class="cp-demo" markdown="0">
 <div class="demo">
 <div class="field" style="max-width:430px">
@@ -1603,7 +1603,7 @@
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nv">name</span><span class="o">:</span> <span class="s2">&quot;featuredImage&quot;</span><span class="o">,</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="nv">elementType</span><span class="o">:</span> <span class="s2">&quot;craft\\elements\\Asset&quot;</span><span class="o">,</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="nv">elements</span><span class="o">:</span> <span class="nv">entry.featuredImage.all</span><span class="o">(),</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="nv">viewMode</span><span class="o">:</span> <span class="s2">&quot;large&quot;</span><span class="o">,</span>      <span class="o">//</span> <span class="nv">thumbnails</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="nv">viewMode</span><span class="o">:</span> <span class="s2">&quot;thumbs&quot;</span><span class="o">,</span>     <span class="o">//</span> <span class="nv">thumbnails</span> <span class="o">(</span><span class="s2">&quot;large&quot;</span> <span class="k">is</span> <span class="nf">a</span> <span class="nv">legacy</span> <span class="nv">alias</span><span class="o">)</span>
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="nv">limit</span><span class="o">:</span> <span class="m">1</span><span class="o">,</span>               <span class="o">//</span> <span class="nv">single</span> <span class="nv">selection</span>
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="nv">selectionLabel</span><span class="o">:</span> <span class="s2">&quot;Choose an image&quot;</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s2">&quot;my-plugin&quot;</span><span class="o">),</span>
 <a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="nv">sources</span><span class="o">:</span> <span class="o">[</span><span class="s2">&quot;volume:uploads&quot;</span><span class="o">],</span>
@@ -1668,7 +1668,7 @@
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Same UI for custom element types.</strong> If your plugin defines its own element, a relation field pointing at it renders with this exact <code>elementSelect</code>. Implement your element’s <code>chipHtml()</code> / <code>cardHtml()</code> (via <code>craft\base\Element</code>) to control how it appears in each view mode.</p>
+<p><strong>Same UI for custom element types.</strong> If your plugin defines its own element, a relation field pointing at it renders with this exact <code>elementSelect</code>. Override your element’s <code>attributeHtml()</code>, <code>getChipLabelHtml()</code>, and <code>getCardBodyHtml()</code> (on <code>craft\base\Element</code>) to control how it appears in each view mode. (There is no <code>chipHtml()</code> / <code>cardHtml()</code> to override — those are static renderers on <code>craft\helpers\Cp</code>.)</p>
 </div>
 
 
@@ -1726,7 +1726,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
