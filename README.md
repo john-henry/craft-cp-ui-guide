@@ -35,16 +35,6 @@ mkdocs serve
 # open http://127.0.0.1:8000
 ```
 
-## Deploy to GitHub Pages
-
-1. Push this repo to GitHub (default branch `main`), and set `repo_url` / `site_url` in
-   `mkdocs.yml` and the URL in this README to your own.
-2. The included workflow (`.github/workflows/deploy.yml`) builds the site and publishes it to
-   a `gh-pages` branch on every push to `main`.
-3. In **Settings → Pages**, set **Source → Deploy from a branch → `gh-pages` / `(root)`**.
-4. Your guide goes live at `https://john-henry.github.io/craft-cp-guide/`.
-
-Prefer a one-off manual deploy? `mkdocs gh-deploy` does the same thing from your machine.
 
 ## Contributing
 
