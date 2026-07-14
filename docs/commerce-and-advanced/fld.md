@@ -26,7 +26,7 @@ This is what the addable items look like in the library, each with its icon and 
 </div>
 
 ```html title="chip markup"
-<div class="fld-element fld-ui-element">
+<div class="fld-ui-element" data-type="craft-fieldlayoutelements-Heading">
   <div class="fld-element-icon"><!-- SVG icon --></div>
   <div class="field-name">
     <div class="fld-element-label"><h4>Heading</h4></div>

@@ -41,6 +41,12 @@ mkdocs serve
 Spotted an inaccuracy or something that's drifted from current Craft? Please
 [open an issue or PR](CONTRIBUTING.md) — fidelity is the whole point of this reference.
 
+## Acknowledgements
+
+Thanks to the folks whose contributions and work have improved this repo:
+
+- **[Michael Thomas](https://github.com/michtio)** ([@michtio](https://github.com/michtio)) — Feedback and creator of [Craft CMS Claude Skills](https://github.com/michtio/craftcms-claude-skills)
+
 ## License
 
 [MIT](LICENSE). Craft CMS, its control panel, class names, and design tokens are the property

@@ -19,7 +19,6 @@ theme:
       accent: red
       toggle: { icon: material/weather-sunny, name: Switch to light mode }
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.top
