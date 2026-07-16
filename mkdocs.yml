@@ -59,6 +59,13 @@ markdown_extensions:
 
 plugins:
   - search
+  # Material content-hashes its own assets; our craft-cp.css wasn't, so a deploy could serve
+  # stale styles from cache. cache_safe hashes the filename and rewrites the reference.
+  - minify:
+      minify_css: true
+      cache_safe: true
+      css_files:
+        - stylesheets/craft-cp.css
   # Per-page "last updated" — this guide is a snapshot that drifts from Craft, so the date is
   # real information for a reader. Needs git history: CI already checks out with fetch-depth: 0.
   - git-revision-date-localized:

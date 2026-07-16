@@ -2,6 +2,10 @@
 # the site identically. Bump these together.
 mkdocs-material==9.7.6
 
-# Bundled in the Docker image already; pinned here because CI installs from this file.
-# Needs git history — deploy.yml checks out with fetch-depth: 0.
+# Both are bundled in the Docker image already; pinned here because CI installs from this file.
+
+# Per-page "last updated". Needs git history — deploy.yml checks out with fetch-depth: 0.
 mkdocs-git-revision-date-localized-plugin==1.5.1
+
+# cache_safe hashes craft-cp.css so a deploy can't serve stale styles from cache.
+mkdocs-minify-plugin==0.8.0
