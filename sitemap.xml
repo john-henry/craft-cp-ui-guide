@@ -2,126 +2,154 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/contributing/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/address/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/elindex/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/fld/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/metadata/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/money/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/status-labels/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/commerce-and-advanced/totals/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/components/autosuggest/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/badges/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/buttons/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/checkradio/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/copytext/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/components/datetime/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/field/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/lightswitch/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/components/menus/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/modals/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/panes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/components/pickers/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/relationfields/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/select/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/components/selectize/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/sidebar-nav/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/spinner/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/status/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/tables/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/tabs/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/text/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/components/toolbar/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://john-henry.github.io/craft-cp-ui-guide/components/vue-admin-table/</loc>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/foundations/color/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/foundations/space/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/foundations/tokens/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/foundations/type/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/reference/fieldtypes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
     <url>
          <loc>https://john-henry.github.io/craft-cp-ui-guide/reference/macros/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-16</lastmod>
     </url>
 </urlset>
