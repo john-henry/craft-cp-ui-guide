@@ -29,17 +29,38 @@ The component previews are real HTML styled with Craft's actual CSS (extracted t
 
 ## Run locally
 
+The site is [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). With Docker you
+need nothing installed, and you get the same version CI builds with:
+
 ```bash
-pip install -r requirements.txt
-mkdocs serve
-# open http://127.0.0.1:8000
+make serve      # open http://localhost:8000/craft-cp-ui-guide/
 ```
 
+Note the `/craft-cp-ui-guide/` path — `site_url` sets a base path, so the bare root redirects
+there. Other targets:
+
+```bash
+make build      # render to site/ with --strict (what CI runs)
+make clean      # remove site/
+make help       # list every target
+```
+
+Prefer running MkDocs natively? You'll need **Python 3.9+**:
+
+```bash
+make venv        # creates .venv, installs requirements.txt
+make venv-serve
+```
+
+On Debian/Ubuntu that also needs the matching `python3.x-venv` package, and you may have to
+point it at a newer interpreter: `make venv PY=python3.12`.
 
 ## Contributing
 
 Spotted an inaccuracy or something that's drifted from current Craft? Please
-[open an issue or PR](CONTRIBUTING.md) — fidelity is the whole point of this reference.
+[open an issue or PR](CONTRIBUTING.md) — fidelity is the whole point of this reference. The full
+guide, including how the live previews are built, is at
+[Contributing](https://john-henry.github.io/craft-cp-ui-guide/contributing/).
 
 ## Acknowledgements
 

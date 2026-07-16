@@ -4,6 +4,13 @@ site_url: https://john-henry.github.io/craft-cp-ui-guide/
 repo_url: https://github.com/john-henry/craft-cp-ui-guide
 edit_uri: edit/main/docs/
 
+# Rendered in the footer on every page. Most readers arrive on a component page from search and
+# never see the home page, so the "unofficial" disclaimer needs to live here too.
+copyright: >
+  <a href="https://github.com/john-henry/craft-cp-ui-guide/blob/main/LICENSE">MIT</a> ·
+  Craft CMS, its control panel, class names, and design tokens are the property of
+  Pixel &amp; Tonic, Inc. This guide documents them and is not affiliated with or endorsed by them.
+
 theme:
   name: material
   custom_dir: overrides
@@ -22,8 +29,13 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.top
+    - navigation.footer
     - toc.follow
     - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
     - search.suggest
     - search.highlight
 
@@ -42,9 +54,16 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
+  # Per-page "last updated" — this guide is a snapshot that drifts from Craft, so the date is
+  # real information for a reader. Needs git history: CI already checks out with fetch-depth: 0.
+  - git-revision-date-localized:
+      enable_creation_date: false
+      fallback_to_build_date: true
 
 nav:
   - Home: index.md
@@ -57,18 +76,24 @@ nav:
       - Buttons: components/buttons.md
       - The field wrapper: components/field.md
       - Text & textarea: components/text.md
+      - Date & time: components/datetime.md
       - Select: components/select.md
+      - Selectize: components/selectize.md
+      - Autosuggest: components/autosuggest.md
       - Checkbox & radio: components/checkradio.md
       - Lightswitch: components/lightswitch.md
       - Copytext: components/copytext.md
+      - Colour & icon pickers: components/pickers.md
       - Status indicators: components/status.md
       - Badges, chips, tokens: components/badges.md
       - Panes & meta: components/panes.md
       - Tables: components/tables.md
+      - Vue admin tables: components/vue-admin-table.md
       - Tabs: components/tabs.md
       - Toolbar & search: components/toolbar.md
       - Inner sidebar menus: components/sidebar-nav.md
       - Spinner: components/spinner.md
+      - Menus: components/menus.md
       - Modals: components/modals.md
       - Entries & Assets fields: components/relationfields.md
   - Commerce & advanced:
@@ -81,4 +106,5 @@ nav:
       - Layout builder elements: commerce-and-advanced/fld.md
   - Reference:
       - Built-in field types: reference/fieldtypes.md
-      - Macro reference: reference/macros.md
+      - Form macros: reference/macros.md
+  - Contributing: contributing.md

@@ -1,1 +1,7 @@
-mkdocs-material>=9.5
+# Pinned to match the IMAGE in the Makefile, so local previews and the CI deploy build
+# the site identically. Bump these together.
+mkdocs-material==9.7.6
+
+# Bundled in the Docker image already; pinned here because CI installs from this file.
+# Needs git history — deploy.yml checks out with fetch-depth: 0.
+mkdocs-git-revision-date-localized-plugin==1.5.1

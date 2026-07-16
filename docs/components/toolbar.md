@@ -6,7 +6,7 @@ The bar that sits above element indexes: a search box, filters, and view control
 <div class="demo" style="padding:0; border:0">
 <div class="toolbar">
 <div class="search-container"><input class="text" placeholder="Search entries…" type="text"/><button class="clear-btn hidden" title="Clear"></button></div>
-<div class="select-wrap" style="width:auto"><select class="select-el" style="width:auto"><option>All sections</option><option>News</option></select></div>
+<div class="select" style="width:auto"><select style="width:auto"><option>All sections</option><option>News</option></select></div>
 <span class="flex-grow"></span>
 <button class="btn submit">New entry</button>
 </div>

@@ -65,64 +65,7 @@
 .cp-demo code{font-family:var(--mono); font-size:.86em}
 
 
-.cp-demo .layout{display:grid; grid-template-columns:248px 1fr; min-height:100vh}
-
-
-
-.cp-demo .sidebar{
-  background:var(--gray-900); color:var(--gray-200);
-  position:sticky; top:0; height:100vh; overflow-y:auto; padding:22px 0;
-}
-
-.cp-demo .sidebar .brand{padding:0 22px 18px; border-bottom:1px solid rgba(255,255,255,.08); margin-bottom:12px}
-
-.cp-demo .sidebar .brand .mark{
-  display:inline-flex; align-items:center; justify-content:center;
-  width:34px; height:34px; border-radius:var(--radius-md);
-  background:var(--red-600); color:#fff; font-weight:700; font-size:18px; margin-bottom:10px;
-}
-
-.cp-demo .sidebar .brand h1{font-size:15px; margin:0; color:#fff; font-weight:600; line-height:1.3}
-
-.cp-demo .sidebar .brand p{font-size:12px; margin:4px 0 0; color:var(--gray-400)}
-
-.cp-demo .sidebar nav{padding:0 12px}
-
-.cp-demo .sidebar .group{font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--gray-400); padding:14px 10px 6px; font-weight:600}
-
-.cp-demo .sidebar nav a{
-  display:block; color:var(--gray-200); padding:6px 10px; border-radius:var(--radius-md);
-  font-size:13.5px; line-height:1.35;
-}
-
-.cp-demo .sidebar nav a:hover{background:rgba(255,255,255,.06); text-decoration:none; color:#fff}
-
-
-.cp-demo .content{padding:44px 56px 120px; max-width:960px}
-
-.cp-demo .page-head{border-bottom:1px solid var(--border-hairline); padding-bottom:26px; margin-bottom:14px}
-
-.cp-demo .page-head .eyebrow{font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--fg-subtle); font-weight:600}
-
-.cp-demo .page-head h1{font-size:30px; line-height:1.2; margin:8px 0 12px; color:var(--gray-900); font-weight:700; letter-spacing:-.01em}
-
-.cp-demo .page-head p{font-size:15px; max-width:64ch; color:var(--gray-600); margin:0}
-
-.cp-demo .page-head .version{display:inline-block; margin-top:14px; font-size:12px; background:var(--gray-200); color:var(--gray-700); padding:3px 9px; border-radius:var(--radius-lg); font-weight:500}
-
-
-.cp-demo section{padding-top:52px; scroll-margin-top:20px}
-
-.cp-demo section > h2{
-  font-size:22px; color:var(--gray-900); font-weight:700; margin:0 0 6px; letter-spacing:-.01em;
-  padding-bottom:8px; border-bottom:2px solid var(--gray-200);
-}
-
-.cp-demo section > .lead{color:var(--gray-600); margin:10px 0 4px; max-width:70ch}
-
 .cp-demo h3{font-size:16px; color:var(--gray-800); margin:34px 0 4px; font-weight:600}
-
-.cp-demo h3 .anno{font-family:var(--mono); font-size:12px; color:var(--fg-subtle); font-weight:400; margin-left:8px}
 
 
 
@@ -134,43 +77,6 @@
 .cp-demo .demo + .code{margin-top:0; border-radius:0 0 var(--radius-lg) var(--radius-lg); border-top:0}
 
 .cp-demo .demo.row{display:flex; flex-wrap:wrap; gap:14px; align-items:flex-start}
-
-.cp-demo .code{
-  position:relative; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg);
-  background:var(--gray-900); margin-top:16px; overflow:hidden;
-}
-
-.cp-demo .code pre{margin:0; padding:16px 18px; overflow-x:auto; color:#e6edf3; font-family:var(--mono); font-size:12.5px; line-height:1.6}
-
-.cp-demo .code .tag{position:absolute; top:0; right:0; font-size:10px; text-transform:uppercase; letter-spacing:.06em;
-  color:var(--gray-400); background:rgba(255,255,255,.06); padding:3px 8px; border-bottom-left-radius:var(--radius-md)}
-
-.cp-demo .code .cp-copy{position:absolute; top:6px; right:64px; font-size:11px; color:var(--gray-300); background:rgba(255,255,255,.08);
-  border:0; border-radius:var(--radius-md); padding:4px 9px; cursor:pointer; font-family:var(--sans)}
-
-.cp-demo .code .cp-copy:hover{background:rgba(255,255,255,.16); color:#fff}
-
-.cp-demo .tok-c{color:#8b98a5}
- .cp-demo .tok-k{color:#79c0ff}
- .cp-demo .tok-s{color:#a5d6ff}
- .cp-demo .tok-a{color:#7ee787}
-
-
-.cp-demo .note{background:var(--sky-100); border-left:3px solid var(--sky-600); padding:11px 15px; border-radius:0 var(--radius-md) var(--radius-md) 0; margin:16px 0; font-size:13.5px; color:var(--gray-700)}
-
-.cp-demo .note strong{color:var(--sky-700)}
-
-
-
-.cp-demo table.ref{width:100%; border-collapse:collapse; margin-top:16px; font-size:13px}
-
-.cp-demo table.ref th{text-align:left; font-weight:600; color:var(--gray-800); border-bottom:2px solid var(--gray-200); padding:8px 10px; font-size:12px}
-
-.cp-demo table.ref td{border-bottom:1px solid var(--border-hairline); padding:8px 10px; vertical-align:top}
-
-.cp-demo table.ref td code{color:var(--red-700); background:var(--gray-050); padding:1px 5px; border-radius:3px}
-
-.cp-demo .swatch{display:inline-block; width:22px; height:22px; border-radius:var(--radius-sm); border:1px solid var(--border-hairline); vertical-align:-6px; margin-right:8px}
 
 
 .cp-demo .pal{display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:8px; margin-top:16px}
@@ -238,15 +144,13 @@
 
 .cp-demo .ic{width:1em; height:1em; display:inline-block; vertical-align:-0.125em; flex:0 0 auto; fill:none}
 
-.cp-demo .fld-element-icon .ic, .cp-demo .cp-icon.medium .ic, .cp-demo .gear .ic, .cp-demo .fld-settings-gear .ic, .cp-demo .fld-add-btn .ic, .cp-demo .fld-new-tab-btn .ic{width:100%; height:100%}
+.cp-demo .fld-element-icon .ic{width:100%; height:100%}
 
-.cp-demo .gear, .cp-demo .fld-settings-gear{display:inline-flex; align-items:center; justify-content:center}
 
 .cp-demo .copytextbtn .ic{width:15px; height:15px}
 
 .cp-demo .tip-dismiss-btn .ic{width:14px; height:14px}
 
-.cp-demo .fld-add-btn .ic, .cp-demo .fld-new-tab-btn .ic{width:14px; height:14px}
 
 .cp-demo .btngroup{display:inline-flex; border-radius:var(--radius-lg)}
 
@@ -266,12 +170,20 @@
 
 .cp-demo .field > .heading{margin-bottom:5px}
 
-.cp-demo .field > .heading > label{font-weight:600; color:var(--gray-800); font-size:13px}
+.cp-demo .field > .heading{display:flex; align-items:center}
 
-.cp-demo .field > .heading > label.required::after{
+.cp-demo .field > .heading > label, .cp-demo .field > .heading > legend{font-weight:600; color:var(--gray-800); font-size:13px}
+
+/* The marker is its own <span class="required">, not a class on the label. Craft draws it with
+   an "asterisk" ligature from its icon font; this is the same glyph as SVG. */
+.cp-demo .field .heading .required::after{
   content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 384 512'><path fill='%23e11d48' d='M192 32c17.7 0 32 14.3 32 32l0 132.5 115.6-66.8c15.3-8.8 34.9-3.6 43.7 11.7s3.6 34.9-11.7 43.7L256 251.5l115.6 66.8c15.3 8.8 20.5 28.4 11.7 43.7s-28.4 20.5-43.7 11.7L224 315.5 224 448c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-132.5L44.4 373.7c-15.3 8.8-34.9 3.6-43.7-11.7s-3.6-34.9 11.7-43.7L128 251.5 12.4 184.7C-2.9 175.9-8.1 156.3 .7 141s28.4-20.5 43.7-11.7L160 196.5 160 64c0-17.7 14.3-32 32-32z'/></svg>");
   display:inline-block; margin-inline:5px 0; vertical-align:2px; line-height:0;
 }
+
+.cp-demo .field .heading .flex-grow{flex:1; max-width:100%}
+
+.cp-demo .field .heading .read-only-badge{margin-left:8px; font-size:11px; color:var(--fg-subtle); background:var(--gray-100); padding:2px 6px; border-radius:var(--radius-md)}
 
 .cp-demo .field > .instructions{color:var(--fg-subtle); font-size:12.5px; margin-bottom:6px}
 
@@ -279,20 +191,31 @@
 
 .cp-demo .field .input{position:relative}
 
-.cp-demo .field .tip, .cp-demo .field .warning, .cp-demo .field .errors{font-size:12.5px; margin-top:6px; display:flex; gap:6px; align-items:flex-start}
+/* Tips are .notice and warnings are .warning — both <p class="… has-icon">, not .tip. */
+.cp-demo .field .notice, .cp-demo .field .warning, .cp-demo .field .errors{font-size:12.5px; margin:6px 0 0; display:flex; gap:6px; align-items:flex-start}
 
-.cp-demo .field .tip{color:var(--fg-notice)}
- .cp-demo .field .warning{color:var(--fg-warning)}
+.cp-demo .field .notice{color:var(--fg-notice)}
 
-.cp-demo .field .errors{list-style:none; padding:0; margin:6px 0 0; color:var(--fg-error)}
+.cp-demo .field .warning{color:var(--fg-warning)}
+
+.cp-demo .field .has-icon .icon{display:inline-flex; align-items:center; flex:0 0 auto; margin-top:1px}
+
+.cp-demo .field .has-icon .icon .ic{width:13px; height:13px}
+
+.cp-demo .field .errors{list-style:none; padding:0; color:var(--fg-error); flex-direction:column; gap:2px}
 
 .cp-demo .field .errors li{margin:0}
 
-.cp-demo .badge-required{color:var(--fg-error)}
+/* A field flagged as modified/outdated in the corner. */
+.cp-demo .field{position:relative}
+
+.cp-demo .field > .status-badge{position:absolute; inset-inline-start:-16px; top:2px; width:8px; height:8px; border-radius:50%; background:var(--bg-pending)}
+
+.cp-demo .field > .status-badge.modified{background:var(--sky-600)}
 
 
 
-.cp-demo .text, .cp-demo .selectize-like, .cp-demo textarea.text, .cp-demo select.select-el{
+.cp-demo .text, .cp-demo textarea.text, .cp-demo .select select{
   width:100%; height:var(--ui-control-height); padding:0 10px;
   border:1px solid var(--fg-input); border-radius:var(--radius-lg);
   background:#fff; color:var(--gray-800); font-family:inherit; font-size:14px;
@@ -300,35 +223,45 @@
 
 .cp-demo textarea.text{height:auto; min-height:82px; padding:8px 10px; line-height:1.5; resize:vertical}
 
-.cp-demo .text:focus, .cp-demo textarea.text:focus, .cp-demo select.select-el:focus{outline:none; border-color:var(--focus-outline); box-shadow:0 0 0 2px rgb(from var(--focus-outline) r g b / 30%)}
+.cp-demo .text:focus, .cp-demo textarea.text:focus, .cp-demo .select select:focus{outline:none; border-color:var(--focus-outline); box-shadow:0 0 0 2px rgb(from var(--focus-outline) r g b / 30%)}
 
 .cp-demo .text::placeholder{color:var(--gray-350)}
 
 .cp-demo .text.fullwidth{width:100%}
 
-.cp-demo .select-wrap{position:relative; display:inline-block; width:100%}
+/* Craft's select is a .select container around a bare <select> — the <select> itself carries
+   no class. Selectize reuses .select, hence the :not(.selectize) guards. */
+.cp-demo .select:not(.selectize){position:relative; display:inline-block; max-width:100%; width:100%}
 
-.cp-demo select.select-el{appearance:none; padding-right:30px; cursor:pointer}
+.cp-demo .select:not(.selectize) select{appearance:none; padding-right:30px; border-radius:5px; white-space:nowrap; cursor:pointer}
 
-.cp-demo .select-wrap::after{content:''; position:absolute; right:12px; top:50%; width:7px; height:7px;
-  border-right:2px solid var(--fg-subtle); border-bottom:2px solid var(--fg-subtle);
-  transform:translateY(-70%) rotate(45deg); pointer-events:none}
+.cp-demo .select:not(.selectize)::after{content:''; position:absolute; right:9px; top:calc(50% - 5px); width:.4375rem; height:.4375rem;
+  border:solid var(--fg-subtle); border-width:0 .125rem .125rem 0;
+  transform:rotate(45deg); opacity:.8; pointer-events:none; z-index:1}
 
 
 
-.cp-demo .checkbox-row, .cp-demo .radio-row{display:flex; align-items:center; gap:8px; margin:5px 0; cursor:pointer; font-size:13.5px; color:var(--gray-700)}
+.cp-demo{--checkbox-size:14px; --radio-size:1rem}
 
-.cp-demo .cbx{width:16px; height:16px; border:1px solid var(--fg-input); border-radius:var(--radius-sm); background:#fff; position:relative; flex:0 0 auto}
+/* The input and its label are siblings, never nested. The visible control is drawn on the
+   label's ::before; the native input is hidden behind it. */
+.cp-demo .checkbox-group, .cp-demo .radio-group{display:flex; flex-direction:column; gap:.3125rem}
 
-.cp-demo .cbx.checked{background:var(--sky-600); border-color:var(--sky-600)}
+.cp-demo input.checkbox, .cp-demo input.radio{position:absolute; width:var(--checkbox-size); height:var(--checkbox-size); opacity:0}
 
-.cp-demo .cbx.checked::after{content:''; position:absolute; left:5px; top:1.5px; width:4px; height:8px; border:solid #fff; border-width:0 2px 2px 0; transform:rotate(45deg)}
+.cp-demo input.checkbox + label, .cp-demo input.radio + label{position:relative; display:inline-block; cursor:pointer; font-size:13.5px; color:var(--gray-700); line-height:max(1rem, var(--checkbox-size)); min-height:max(1rem, var(--checkbox-size)); padding-inline-start:calc(var(--checkbox-size) + .35rem)}
 
-.cp-demo .rdo{width:16px; height:16px; border:1px solid var(--fg-input); border-radius:50%; background:#fff; position:relative; flex:0 0 auto}
+.cp-demo input.checkbox + label::before{content:''; position:absolute; top:0; inset-inline-start:0; box-sizing:border-box; width:var(--checkbox-size); height:var(--checkbox-size); background:#fbfcfe; border:1px solid var(--fg-input); border-radius:var(--radius-sm)}
 
-.cp-demo .rdo.checked{border-color:var(--sky-600)}
+/* Craft sets content:"check" here — a ligature from its icon font. This tick is a stand-in;
+   note it stays on the pale box rather than inverting it, which is what Craft does. */
+.cp-demo input.checkbox:checked + label::after{content:''; position:absolute; inset-inline-start:5px; top:2px; width:3px; height:7px; border:solid var(--gray-800); border-width:0 2px 2px 0; transform:rotate(45deg)}
 
-.cp-demo .rdo.checked::after{content:''; position:absolute; inset:3px; border-radius:50%; background:var(--sky-600)}
+.cp-demo input.radio + label{padding-inline-start:calc(var(--radio-size) + .35rem)}
+
+.cp-demo input.radio + label::before{content:''; position:absolute; top:50%; inset-inline-start:0; box-sizing:border-box; width:var(--radio-size); height:var(--radio-size); background:#fbfcfe; border:1px solid var(--fg-input); border-radius:100%; transform:translateY(-50%)}
+
+.cp-demo input.radio:checked + label::after{content:''; position:absolute; top:50%; inset-inline-start:4px; width:calc(var(--radio-size) - 8px); height:calc(var(--radio-size) - 8px); background:var(--gray-900); border-radius:100%; transform:translateY(-50%)}
 
 
 
@@ -353,6 +286,21 @@
 .cp-demo .lightswitch.small.on .handle::after{width:8px; height:8px}
 
 
+
+/* Date & time. Craft wraps each control in .datewrapper/.timewrapper, both inside a
+   .datetimewrapper, and marks the trailing glyph with data-icon. */
+.cp-demo .datetimewrapper{display:flex; flex-wrap:wrap; gap:6px}
+
+.cp-demo .datewrapper, .cp-demo .timewrapper{position:relative; display:inline-block}
+
+.cp-demo .datewrapper .text{width:9.5em; padding-right:30px}
+
+.cp-demo .timewrapper .text{width:8.5em; padding-right:30px}
+
+.cp-demo .datetimewrapper [data-icon]{position:absolute; top:0; right:9px; display:flex; align-items:center; height:var(--ui-control-height); color:var(--fg-subtle); pointer-events:none}
+
+/* Craft exposes the expected date format to screen readers only. */
+.cp-demo .visually-hidden{position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
 
 .cp-demo .copytext{display:inline-flex; align-items:stretch; border:1px solid var(--fg-input); border-radius:var(--radius-lg); overflow:hidden; background:#fff; max-width:100%}
 
@@ -390,13 +338,34 @@
 
 
 
-.cp-demo .pane{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); padding:24px}
+.cp-demo .pane, .cp-demo .content-pane{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); padding:24px}
 
-.cp-demo .meta{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); overflow:hidden}
+/* Craft bleeds the header back out through the pane's padding with negative margins, so it
+   meets the card edges. The -24px here must track the pane padding above. */
+.cp-demo .pane-header{margin:-24px -24px 24px; padding:5px 24px 6px; min-height:45px; background:var(--gray-050); border-radius:var(--radius-lg) var(--radius-lg) 0 0; box-shadow:inset 0 -1px 0 0 rgb(from var(--border-hairline-medium) r g b / 60%)}
 
-.cp-demo .meta .field{padding:14px 18px; margin:0; border-bottom:1px solid var(--border-hairline)}
+/* Slideouts only — Craft's JS inserts this flex row between the header and the tabs. */
+.cp-demo .pane-header > .so-toolbar{display:flex; flex-direction:row; align-items:center; gap:var(--xs, 6px); min-height:28px}
 
-.cp-demo .meta .field:last-child{border-bottom:0}
+.cp-demo .meta{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); overflow:hidden; --heading-width:132px}
+
+/* An editable meta pane is tinted; the read-only variant stays white. */
+.cp-demo .meta:not(.read-only){background:var(--gray-050)}
+
+/* Meta rows are horizontal, not stacked — but only inside a .flex-fields wrapper. Craft gives
+   the heading a fixed column with a rule on its trailing edge, and the input fills the rest. */
+.cp-demo .meta > .flex-fields > .field{display:flex; flex-wrap:wrap; align-items:stretch; justify-content:space-between; min-height:44px; margin:0; padding:0}
+
+.cp-demo .meta > .flex-fields > .field + .field{border-top:1px solid var(--border-hairline)}
+
+.cp-demo .meta > .flex-fields > .field > .heading{flex:0 0 var(--heading-width); margin:0; padding:12px 8px 12px 14px; border-right:1px solid var(--border-hairline); line-height:18px}
+
+.cp-demo .meta > .flex-fields > .field > .heading label{color:var(--gray-600)}
+
+.cp-demo .meta > .flex-fields > .field > .input{display:flex; flex:1; align-items:center; min-width:0; padding:0 14px; font-size:13.5px}
+
+/* Meta inputs sit flush in the row rather than drawing their own box. */
+.cp-demo .meta > .flex-fields > .field > .input .text{border:0; background:transparent; padding:0; height:auto}
 
 
 
@@ -410,15 +379,104 @@
 
 .cp-demo table.data tbody tr:hover{background:var(--gray-050)}
 
+/* Editable tables. Note singleline cells are <textarea rows="1">, not text inputs. */
+.cp-demo table.editable{width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); overflow:hidden; font-size:13.5px}
+
+.cp-demo table.editable th{text-align:left; padding:8px 10px; font-weight:600; font-size:12.5px; color:var(--gray-800); background:var(--gray-050); border-bottom:1px solid var(--border-hairline-medium)}
+
+.cp-demo table.editable td{padding:0; border-bottom:1px solid var(--border-hairline); border-inline-end:1px solid var(--border-hairline)}
+
+.cp-demo table.editable tr:last-child td{border-bottom:0}
+
+.cp-demo table.editable td:last-child{border-inline-end:0}
+
+.cp-demo table.editable td.textual textarea{width:100%; border:0; padding:8px 10px; font-family:inherit; font-size:13.5px; color:var(--gray-700); resize:none; background:transparent; line-height:1.4}
+
+.cp-demo table.editable td.thin{width:1%; white-space:nowrap; padding:0 8px; text-align:center; color:var(--fg-subtle); opacity:.5}
+
+/* Colour picker. The hash is a sibling indicator, not part of the input. */
+.cp-demo .color-container{display:flex; flex-wrap:nowrap; align-items:center; gap:6px}
+
+.cp-demo .color{display:inline-flex; align-items:center; justify-content:center; width:var(--ui-control-height); height:var(--ui-control-height); border:1px solid var(--fg-input); border-radius:var(--radius-lg); background:#fff; flex:0 0 auto; padding:3px}
+
+.cp-demo .color.small{width:var(--ui-control-height-small); height:var(--ui-control-height-small)}
+
+.cp-demo .color .color-preview{width:100%; height:100%; border-radius:3px; box-shadow:inset 0 0 0 1px rgb(0 0 0 / 12%)}
+
+.cp-demo .color-input-container{position:relative; display:inline-flex; align-items:center; flex:1; min-width:0}
+
+.cp-demo .color-hex-indicator{position:absolute; inset-inline-start:10px; color:var(--fg-subtle); font-family:var(--mono); font-size:13px; pointer-events:none}
+
+.cp-demo .color-input{width:100%; padding-left:22px; font-family:var(--mono)}
+
+.cp-demo .autosuggest-container{position:relative}
+
+/* Vue admin tables. All of this is rendered by Vue at runtime — these rules only exist so the
+   static preview shows the right shape. */
+.cp-demo .vue-admin-table .tableview{border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); overflow:hidden}
+
+.cp-demo .vue-admin-table table.data{border:0; border-radius:0}
+
+.cp-demo .vue-admin-table td.cell-bold{font-weight:600; color:var(--gray-800)}
+
+.cp-demo .vue-admin-table td.thin{width:1%; white-space:nowrap; color:var(--fg-subtle); opacity:.5}
 
 
-.cp-demo .pane-tabs .scrollable{display:flex; gap:2px; border-bottom:1px solid var(--border-hairline-medium)}
 
-.cp-demo .pane-tabs a{padding:8px 15px; font-size:13.5px; color:var(--gray-600); border-bottom:2px solid transparent; cursor:pointer; margin-bottom:-1px; text-decoration:none}
+/* The strip bleeds out through the pane-header's padding (5px 24px 6px above), so each tab
+   fills the header's full 45px height and reads as a card docked to the pane body. */
+.cp-demo .pane-tabs{display:flex; flex-direction:row; align-items:center; margin:-5px -24px -6px}
 
-.cp-demo .pane-tabs a:hover{color:var(--gray-900)}
+.cp-demo .pane-tabs .scrollable{display:flex; flex:1; flex-direction:row; overflow-x:auto; scrollbar-width:none}
 
-.cp-demo .pane-tabs a.sel{color:var(--red-700); border-bottom-color:var(--red-600); font-weight:600}
+.cp-demo .pane-tabs .scrollable::-webkit-scrollbar{display:none}
+
+/* Label colour travels through a custom property so .sel and .error can each redefine it
+   without fighting over the `color` declaration. */
+.cp-demo .pane-tabs a{--tab-label-color:var(--gray-600); color:var(--tab-label-color); border-radius:2px 2px 0 0; cursor:pointer; text-decoration:none; font-size:13.5px}
+
+.cp-demo .pane-tabs a .tab-label{display:flex; flex-direction:row; align-items:center; gap:5px; height:45px; padding:0 24px; border-radius:2px 2px 0 0; white-space:nowrap}
+
+/* Selected: a white card lifted above the header with an inset top bar — not an underline. */
+.cp-demo .pane-tabs a.sel{--highlight-color:var(--gray-500); --tab-label-color:var(--gray-800); background:#fff; box-shadow:inset 0 2px 0 var(--highlight-color), 0 0 0 1px rgb(51 64 77 / 10%), 0 2px 12px var(--gray-200); cursor:default; position:relative; z-index:1}
+
+/* Errors recolour both the bar and the label, and must win even on the selected tab. */
+.cp-demo .pane-tabs a.error{--highlight-color:var(--red-600) !important; --tab-label-color:var(--red-600) !important}
+
+.cp-demo .pane-tabs a.error .ic{width:13px; height:13px}
+
+/* Craft ships the overflow trigger with .hidden and unhides it via JS only when the tabs
+   overflow their container. */
+.cp-demo .hidden{display:none}
+
+.cp-demo .btn.menubtn{display:inline-flex; align-items:center; gap:5px; min-height:0; padding:4px 9px}
+
+.cp-demo .btn.menubtn.error{color:var(--red-600); border-color:var(--red-300)}
+
+.cp-demo .menu{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); box-shadow:0 3px 12px rgb(0 0 0 / 12%); padding:0; display:inline-block; min-width:160px}
+
+.cp-demo .menu ul.padded{list-style:none; margin:0; padding:5px}
+
+.cp-demo .menu ul.padded li a, .cp-demo .menu ul.padded li button{display:flex; align-items:center; gap:8px; width:100%; padding:6px 10px 6px 28px; border:0; border-radius:4px; background:none; font-family:inherit; font-size:13.5px; text-align:left; color:var(--gray-700); text-decoration:none; cursor:pointer; white-space:nowrap}
+
+.cp-demo .menu ul.padded li a:hover, .cp-demo .menu ul.padded li button:hover{background:var(--gray-050); color:var(--gray-900)}
+
+/* Selected items get a "check" ligature in a reserved gutter, so nothing shifts. */
+.cp-demo .menu ul.padded li a.sel{color:var(--gray-900); font-weight:600}
+
+.cp-demo .menu ul.padded li a.sel::before{content:''; position:absolute; margin-inline-start:-18px; width:4px; height:8px; border:solid currentColor; border-width:0 2px 2px 0; transform:rotate(45deg) translateY(-1px)}
+
+.cp-demo .menu ul.padded li a.error, .cp-demo .menu ul.padded li button.error{color:var(--red-600)}
+
+.cp-demo .menu ul.padded li a.error .ic{width:13px; height:13px}
+
+.cp-demo .menu .menu-item-label{display:inline-flex; flex-direction:column; align-items:flex-start; gap:2px}
+
+.cp-demo .menu .menu-item-description{font-size:11.5px; color:var(--fg-subtle); font-weight:400}
+
+.cp-demo .menu hr.padded{margin:5px 0; border:0; border-top:1px solid var(--border-hairline)}
+
+.cp-demo .menu .menu-group h3{margin:6px 0 2px; padding:0 10px; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--fg-subtle)}
 
 
 
@@ -498,17 +556,38 @@
 
 
 
-.cp-demo .el-index{border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); overflow:hidden; background:#fff}
+.cp-demo .element-index{border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); overflow:hidden; background:#fff}
 
-.cp-demo .el-index .el-toolbar{display:flex; align-items:center; gap:10px; padding:10px 12px; border-bottom:1px solid var(--border-hairline-medium)}
+.cp-demo .element-index .toolbar{display:flex; align-items:center; gap:10px; padding:10px 12px; border-bottom:1px solid var(--border-hairline-medium)}
 
-.cp-demo .el-index table.data{border:0; border-radius:0}
+.cp-demo .element-index table.data{border:0; border-radius:0}
 
-.cp-demo .el-index .el-sources{display:flex; gap:4px; padding:8px 12px; border-bottom:1px solid var(--border-hairline); background:var(--gray-050); font-size:13px}
+/* Element index sources. Craft renders these into the layout's sidebar block, so they inherit
+   the .sidebar nav link styling; only the list chrome is specific to sources. */
+.cp-demo .sources-list{--source-item-toggle-size:1.25rem; position:relative; list-style:none; margin:0; padding-inline-start:var(--m)}
 
-.cp-demo .el-index .el-sources .src{padding:4px 10px; border-radius:var(--radius-md); color:var(--gray-600); cursor:pointer}
+.cp-demo .source-item{position:relative}
 
-.cp-demo .el-index .el-sources .src.sel{background:var(--gray-200); color:var(--gray-900); font-weight:600}
+.cp-demo .source-item--heading{color:var(--fg-subtle); font-size:11px; font-weight:700; text-transform:uppercase; padding-inline-start:var(--s); padding-block:2px}
+
+.cp-demo .sidebar .heading > .source-item--heading + .sources-list{margin-block:var(--xs) 2px}
+
+/* The toggle is absolutely positioned in the list's own inset, left of the label. */
+.cp-demo .source-item .source-item__toggle{position:absolute; inset-inline-start:0; inset-block-start:50%; transform:translateY(-50%); z-index:1;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  width:var(--source-item-toggle-size); height:var(--source-item-toggle-size);
+  border:0; background:none; color:inherit; cursor:pointer; padding:0}
+
+.cp-demo .source-item--heading > craft-disclosure > .source-item__toggle{inset-block-start:0; transform:none}
+
+.cp-demo .cp-icon.puny .ic{width:11px; height:11px}
+
+/* Collapsed hides every source except the selected one, so you never lose your place. */
+.cp-demo .sources-list[data-state="collapsed"] li:not(:has(.sel)){display:none}
+
+.cp-demo .source-item a .label{flex:1 1 auto; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+.cp-demo .element-index .sources-list a{display:flex}
 
 
 
@@ -524,9 +603,7 @@
 
 .cp-demo .fld-workspace{background:var(--gray-100); border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); padding:16px}
 
-.cp-demo .fld-tab-head{font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--fg-subtle); font-weight:600; margin-bottom:10px}
-
-.cp-demo .fld-palette{display:flex; flex-wrap:wrap; gap:10px}
+.cp-demo .fld-ui-library{display:flex; flex-wrap:wrap; gap:10px}
 
 .cp-demo .fld-element{position:relative; display:flex; align-items:center; gap:8px; padding:8px 12px 8px 8px;
   box-shadow:inset 0 0 0 1px var(--border-hairline); border-radius:var(--radius-md); background:#fff; cursor:grab; font-size:13px}
@@ -566,98 +643,53 @@
 
 
 
-.cp-demo .fld-heading{font-size:18px; font-weight:700; color:var(--gray-900); margin:0; letter-spacing:-.01em}
+.cp-demo .demo > h2{font-size:18px; font-weight:700; color:var(--gray-900); margin:0; letter-spacing:-.01em}
 
-.cp-demo hr.fld-rule{border:0; border-top:1px solid var(--border-hairline-medium); margin:4px 0}
+.cp-demo .demo > hr{border:0; border-top:1px solid var(--border-hairline-medium); margin:4px 0}
 
-.cp-demo .line-break-demo{display:flex; align-items:center; gap:10px; color:var(--fg-subtle); font-size:12px}
+.cp-demo .line-break{display:flex; align-items:center; gap:10px; color:var(--fg-subtle); font-size:12px}
 
-.cp-demo .line-break-demo::before, .cp-demo .line-break-demo::after{content:''; flex:1; height:4px; border-radius:2px;
+.cp-demo .line-break::before, .cp-demo .line-break::after{content:''; flex:1; height:4px; border-radius:2px;
   background-image:repeating-linear-gradient(to right,var(--gray-300) 0 8px,transparent 8px 16px)}
 
 
-
-.cp-demo .fld-tab-wrap{background:var(--gray-100); border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); padding:16px}
-
-.cp-demo .fld-tab{display:inline-block; min-width:260px; vertical-align:top}
-
-.cp-demo .fld-tab .fld-tabs{display:flex; gap:2px}
-
-.cp-demo .fld-tab .tab{display:flex; align-items:center; gap:6px; padding:8px 14px; background:#fff; border:1px solid var(--border-hairline-medium); border-bottom:0;
-  border-radius:var(--radius-md) var(--radius-md) 0 0; font-size:13.5px; cursor:grab; color:var(--gray-700)}
-
-.cp-demo .fld-tab .tab.sel{color:var(--gray-900); font-weight:600}
-
-.cp-demo .fld-tab .tab .fld-tab__name{margin:0}
-
-.cp-demo .fld-tab .tab .gear{width:14px; height:14px; opacity:.45; color:var(--fg-subtle)}
-
-.cp-demo .fld-tab .fld-tabcontent{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:0 var(--radius-md) var(--radius-md) var(--radius-md); padding:12px}
-
-.cp-demo .fld-tab .fld-tabcontent > .fld-element + .fld-element, .cp-demo .fld-tab .fld-tabcontent > .fld-element + .fld-add-btn{margin-top:8px}
-
-.cp-demo .fld-add-btn{display:flex; align-items:center; justify-content:center; gap:6px; padding:9px; border:1px dashed var(--gray-400);
-  border-radius:var(--radius-md); color:var(--gray-600); font-size:13px; cursor:pointer; background:transparent}
-
-.cp-demo .fld-add-btn:hover{background:var(--gray-050)}
-
-.cp-demo .fld-new-tab-btn{display:inline-flex; align-items:center; gap:6px; margin-left:8px; padding:8px 12px; border:1px dashed var(--gray-400);
-  border-radius:var(--radius-md); color:var(--gray-600); font-size:13px; cursor:pointer; vertical-align:top}
-
-
-
-.cp-demo .fld-element .cp-icon.medium{width:18px; height:18px; color:var(--fg-subtle); display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto}
 
 .cp-demo .fld-element .field-name{display:flex; flex-direction:column; gap:2px; min-width:0}
 
 .cp-demo .fld-element .fld-element-label{margin:0; font-size:13px; font-weight:600; color:var(--gray-800); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 
-.cp-demo .fld-element .fld-attribute-label{font-family:var(--mono); font-size:11px; color:var(--fg-subtle)}
-
-.cp-demo .fld-element .fld-field-indicators{display:flex; gap:4px; margin-top:2px}
-
-.cp-demo .fld-ind{display:inline-flex; align-items:center; justify-content:center; font-size:13px}
-
-.cp-demo .fld-ind .ic{width:13px; height:13px}
-
-.cp-demo .fld-ind.rose{color:#e11d48}
- .cp-demo .fld-ind.sky{color:var(--sky-600)}
- .cp-demo .fld-ind.amber{color:#d97706}
- .cp-demo .fld-ind.orange{color:var(--orange-600)}
-
-.cp-demo .fld-settings-gear{margin-left:auto; width:16px; height:16px; opacity:.4; flex:0 0 auto; color:var(--fg-subtle)}
 
 
 
-.cp-demo .width-demo{display:flex; flex-wrap:wrap; gap:8px; background:var(--gray-100); padding:10px; border-radius:var(--radius-md)}
 
-.cp-demo .width-demo .wf{background:#fff; box-shadow:inset 0 0 0 1px var(--border-hairline); border-radius:var(--radius-md); padding:10px 12px; font-size:12.5px; color:var(--gray-700); box-sizing:border-box}
+.cp-demo .sidebar{width:230px; background:transparent}
 
-.cp-demo .width-demo .w25{width:calc(25% - 6px)}
- .cp-demo .width-demo .w50{width:calc(50% - 4px)}
- .cp-demo .width-demo .w75{width:calc(75% - 2px)}
- .cp-demo .width-demo .w100{width:100%}
+.cp-demo .sidebar nav{padding-block:0; padding-inline:var(--s)}
 
+.cp-demo .sidebar nav ul{list-style:none; margin:0; padding:0}
 
+.cp-demo .sidebar nav li{position:relative}
 
-.cp-demo .cp-sidebar{width:230px; padding:0 8px; background:transparent}
+/* The heading label and the links share the same --xl inset, so a nested group lines up with
+   its header rather than indenting under it. The child <ul> adds vertical margin only. */
+.cp-demo .sidebar .heading{line-height:1.2; margin:0; position:relative}
 
-.cp-demo .cp-sidebar nav ul{list-style:none; margin:0; padding:0}
+.cp-demo .sidebar .heading:not(:first-child){margin-block-start:var(--m)}
 
-.cp-demo .cp-sidebar nav li{position:relative}
+.cp-demo .sidebar .heading > span{display:inline-block; margin:0; padding-block:0; padding-inline:var(--xl) var(--m); position:relative; z-index:1;
+  text-transform:uppercase; color:var(--fg-subtle); font-size:11px; font-weight:700}
 
-.cp-demo .cp-sidebar nav li.heading > span{display:block; text-transform:uppercase; color:var(--fg-subtle); font-size:11px; font-weight:700; padding:14px 10px 5px}
+.cp-demo .sidebar .heading > ul{margin-block:var(--xs) 2px}
 
-.cp-demo .cp-sidebar nav a{display:flex; align-items:center; gap:8px; min-height:24px; padding:7px 14px 7px 16px; margin-bottom:1px;
-  color:var(--text-color); border-radius:var(--radius-lg); font-size:13.5px; text-decoration:none; word-break:break-word}
+.cp-demo .sidebar nav li a{display:flex; flex-direction:row; align-items:center; gap:8px; box-sizing:border-box;
+  min-height:var(--xl); padding-block:7px; padding-inline:var(--xl) var(--m); margin-block-end:1px;
+  color:var(--text-color); border-radius:var(--radius-lg); font-size:13.5px; text-decoration:none; cursor:pointer; word-break:break-word}
 
-.cp-demo .cp-sidebar nav a:hover{background:var(--gray-200); text-decoration:none}
+.cp-demo .sidebar nav li:not(.has-subnav) > a:not(.sel):hover{background:var(--gray-200); text-decoration:none}
 
-.cp-demo .cp-sidebar nav a.sel{background:var(--gray-500); color:#fff; cursor:default}
+.cp-demo .sidebar nav li:not(.has-subnav) > a.sel{background:var(--gray-500); color:#fff; cursor:default}
 
-.cp-demo .cp-sidebar nav a.sel:hover{background:var(--gray-500)}
-
-.cp-demo .cp-sidebar nav a .badge{margin-left:auto}
+.cp-demo .sidebar nav li a .badge{margin-inline:10px -4px; background:var(--fg-subtle); color:#fff; border-radius:var(--s); font-size:.625rem; height:1rem; line-height:1rem; min-width:1.1rem; padding-inline:var(--xs); text-align:center}
 
 .cp-demo .cp-sidebar-frame{display:grid; grid-template-columns:230px 1fr; gap:20px; background:var(--gray-100); border:1px solid var(--border-hairline-medium); border-radius:var(--radius-lg); padding:18px}
 
@@ -665,13 +697,9 @@
 
 
 @media (max-width:880px){
-  .cp-demo .layout{grid-template-columns:1fr}
-
-  .cp-demo .sidebar{position:static; height:auto}
-
-  .cp-demo .content{padding:28px 20px 80px}
-
   .cp-demo .grid2{grid-template-columns:1fr}
+
+  .cp-demo .cp-sidebar-frame{grid-template-columns:1fr}
 
 }
 @media (prefers-reduced-motion:reduce){.cp-demo *{animation:none!important; transition:none!important}
@@ -712,108 +740,109 @@
 
 .cp-demo .hud .main{padding:11px 12px; font-size:13px; color:var(--gray-700)}
 
-.cp-demo .modal-label{font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--fg-subtle); font-weight:600; margin:0 0 6px}
-
 
 .cp-demo .elementselect{display:flex; flex-direction:column; gap:7px; max-width:430px}
 
-.cp-demo .elementselect .elements{display:flex; flex-direction:column; gap:6px}
+/* Related elements are a <ul class="elements chips chips-small"> — one chip per <li>.
+   align-items:flex-start is what makes chips hug their content; without it the <li> stretches
+   and every chip goes full-width. */
+.cp-demo ul.chips{display:flex; align-items:flex-start; gap:var(--xs); list-style:none; margin:0; padding:0}
 
-.cp-demo .el-row{display:flex; align-items:center; gap:9px; padding:6px 9px; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-md); background:#fff}
+.cp-demo ul.chips:not(.inline-chips){flex-direction:column}
 
-.cp-demo .el-row .thumb{width:30px; height:30px; border-radius:var(--radius-sm); background:var(--gray-200); flex:0 0 auto; display:flex; align-items:center; justify-content:center; color:var(--fg-subtle)}
+.cp-demo ul.chips.inline-chips{flex-direction:row; flex-wrap:wrap}
 
-.cp-demo .el-row .el-label{font-size:13px; color:var(--gray-800); font-weight:500; line-height:1.2}
+.cp-demo ul.chips li{max-width:100%}
 
-.cp-demo .el-row .el-sub{font-size:12px; color:var(--fg-subtle)}
+.cp-demo ul.chips.chips-small li{height:2.125rem}
 
-.cp-demo .el-row .move{margin-left:auto; color:var(--fg-subtle); opacity:.55; cursor:grab; width:14px; height:14px}
+/* The chip's hairline is a ::before overlay rather than a border, so it can sit above the
+   thumb without the thumb's corners poking through. */
+.cp-demo .chip{position:relative; overflow:hidden; display:flex; align-items:center; height:100%; padding:0 8px; border-radius:var(--radius-lg); background:#fff}
 
-.cp-demo .rel-add{align-self:flex-start}
+.cp-demo .chip::before{content:''; position:absolute; inset:0; z-index:1; pointer-events:none; border-radius:var(--radius-lg); box-shadow:inset 0 0 0 1px var(--gray-200)}
 
-.cp-demo .el-thumbs{display:flex; gap:12px; flex-wrap:wrap}
+.cp-demo .chip.small{flex-direction:row; --thumb-size:1.875rem}
 
-.cp-demo .el-thumb{width:92px}
+.cp-demo .chip .chip-content{display:flex; flex-direction:row; align-items:center; gap:8px; width:100%; min-width:0}
 
-.cp-demo .el-thumb .pic{width:92px; height:92px; border-radius:var(--radius-md); background:var(--gray-150); border:1px solid var(--border-hairline-medium); display:flex; align-items:center; justify-content:center; color:var(--fg-subtle)}
+/* elementChipHtml overrides chipHtml's .chip-label with a <craft-element-label class="label">,
+   so element chips carry .label — not .chip-label. */
+.cp-demo .chip .label{display:flex; align-items:center; gap:var(--xs); overflow:hidden; font-size:13px; color:var(--gray-800)}
 
-.cp-demo .el-thumb .pic .ic{width:26px; height:26px}
+.cp-demo .chip .label .label-link{flex:1 1 0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
 
-.cp-demo .el-thumb .cap{font-size:11.5px; color:var(--gray-700); margin-top:5px; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+/* Actions are pushed to the trailing edge by margin, not by a spacer element. */
+.cp-demo .chip-actions{display:flex; align-items:center; gap:2px; margin-left:auto}
 
-.cp-demo .el-card{display:flex; gap:10px; padding:10px; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-md); background:#fff; max-width:300px}
+.cp-demo .chip-actions .btn.action-btn{height:auto; min-height:0; padding:3px; border:0; background:none; color:var(--fg-subtle)}
 
-.cp-demo .el-card .pic{width:44px; height:44px; border-radius:var(--radius-sm); background:var(--gray-150); flex:0 0 auto; display:flex; align-items:center; justify-content:center; color:var(--fg-subtle)}
+.cp-demo .chip-actions .btn .cp-icon{width:14px; height:14px; display:inline-flex}
 
-.cp-demo .el-card .cbody{display:flex; flex-direction:column; gap:3px; min-width:0}
+.cp-demo .chip-actions .btn .cp-icon svg{width:100%; height:100%; fill:currentColor}
 
-.cp-demo .el-card .cbody .t{font-size:13px; font-weight:600; color:var(--gray-800)}
+.cp-demo .inline-flex{display:inline-flex}
 
-.cp-demo .el-card .cbody .d{font-size:12px; color:var(--fg-subtle)}
+.cp-demo .gap-xs{gap:var(--xs)}
 
+.cp-demo .chip-actions .btn.chromeless{height:auto; min-height:0; padding:3px; border:0; background:none; color:var(--fg-subtle)}
 
+.cp-demo .chip-actions .btn.chromeless .ic{width:14px; height:14px}
 
-.cp-demo .elementselect{max-width:420px}
+.cp-demo .move-btn{cursor:grab}
 
-.cp-demo .elements{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px}
+/* Add is a dashed ghost button — not the solid grey .btn default. */
+.cp-demo .flex{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
 
-.cp-demo .elements.inline{flex-direction:row; flex-wrap:wrap}
+.cp-demo .btn.dashed{background:transparent; border:1px dashed rgb(96 125 159 / 50%); color:var(--gray-700)}
 
-.cp-demo .el-chip{display:flex; align-items:center; gap:9px; padding:6px 9px; background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-md); box-shadow:0 1px 0 rgba(11,19,36,.03)}
+.cp-demo .btn.dashed:hover{background:var(--gray-050)}
 
-.cp-demo .elements.inline .el-chip{padding:5px 9px}
+/* Search sits beside Add, and only renders when the field passes searchCriteria. */
+.cp-demo .texticon{position:relative; display:inline-flex; align-items:center}
 
-.cp-demo .el-chip .el-thumb{width:30px; height:30px; border-radius:var(--radius-sm); background:var(--gray-200); flex:0 0 auto; display:flex; align-items:center; justify-content:center; color:var(--fg-subtle); overflow:hidden}
+.cp-demo .texticon > .ic{position:absolute; left:9px; width:14px; height:14px; color:var(--fg-subtle); pointer-events:none}
 
-.cp-demo .el-chip .el-thumb.img{background:linear-gradient(135deg,#c7d2e0,#9fb2c8)}
+.cp-demo .texticon .text{width:auto; padding-left:28px}
 
-.cp-demo .el-chip .el-body{display:flex; flex-direction:column; min-width:0; flex:1}
+/* Thumbs view is not its own template — it's the list with size:large + inline:true, which
+   lands as a grid of column chips rather than a bespoke thumbnail widget. */
+.cp-demo ul.chips.inline-chips.chips-large{display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:10px}
 
-.cp-demo .el-chip .el-title{font-size:13.5px; color:var(--gray-800); font-weight:500; line-height:1.2; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.cp-demo .chip.large{flex-direction:column; align-items:stretch; --thumb-size:120px; min-width:calc(16px + var(--thumb-size)); width:100%; padding:8px}
 
-.cp-demo .el-chip .el-sub{font-size:11.5px; color:var(--fg-subtle)}
+.cp-demo .chip.large > .thumb{width:100%; height:var(--thumb-size); border-radius:var(--radius-sm); background:var(--gray-150); display:flex; align-items:center; justify-content:center; color:var(--fg-subtle); overflow:hidden}
 
-.cp-demo .el-chip .el-status{margin-left:auto; flex:0 0 auto}
+.cp-demo .chip.large > .thumb .ic{width:26px; height:26px}
 
-.cp-demo .el-chip .el-remove{margin-left:6px; width:16px; height:16px; color:var(--fg-subtle); opacity:.5; flex:0 0 auto; cursor:pointer; display:inline-flex}
+.cp-demo .chip.large .label{font-size:12px}
 
-.cp-demo .el-chip .el-move{width:12px; height:16px; color:var(--fg-subtle); opacity:.35; cursor:grab; flex:0 0 auto; background:radial-gradient(currentColor 1px,transparent 1.4px); background-size:4px 4px; background-position:center}
+/* Cards: a titlebar strip over a card-main grid. viewMode 'cards-grid' emits .card-grid. */
+.cp-demo ul.cards, .cp-demo ul.card-grid{list-style:none; margin:0; padding:0}
 
+.cp-demo ul.cards{display:flex; flex-direction:column; gap:8px}
 
-.cp-demo .elements.thumbs{flex-direction:row; flex-wrap:wrap; gap:10px}
+.cp-demo ul.card-grid{display:grid; gap:8px; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr))}
 
-.cp-demo .elements.thumbs .el-chip{flex-direction:column; width:96px; padding:8px; text-align:center; gap:6px; position:relative}
+.cp-demo .card{position:relative; display:flex; flex-direction:column; overflow:hidden; border-radius:var(--radius-lg); background:#fff}
 
-.cp-demo .elements.thumbs .el-chip .el-thumb{width:100%; height:70px}
+.cp-demo .card::before{content:''; position:absolute; inset:0; z-index:1; pointer-events:none; border-radius:var(--radius-lg); box-shadow:inset 0 0 0 1px var(--gray-200)}
 
-.cp-demo .elements.thumbs .el-chip .el-body{align-items:center; width:100%}
+.cp-demo .card-titlebar{display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:8px; min-height:28px; padding-inline:14px; background:var(--gray-100); border-radius:var(--radius-lg) var(--radius-lg) 0 0; user-select:none}
 
-.cp-demo .elements.thumbs .el-chip .el-remove{position:absolute; top:4px; right:4px; margin:0}
+.cp-demo .card-titlebar-label{font-size:.8em; color:var(--gray-700)}
 
-.cp-demo .elements.thumbs .el-chip .el-status{position:absolute; top:6px; left:6px; margin:0}
+.cp-demo .card-titlebar .flex{gap:8px; flex-wrap:nowrap}
 
+.cp-demo .card-actions{display:flex; align-items:center; gap:2px}
 
-.cp-demo .elements.cards{gap:8px}
+.cp-demo .card-main{display:grid; gap:8px; padding:8px 14px; width:100%; overflow:hidden; border-radius:0 0 var(--radius-lg) var(--radius-lg)}
 
-.cp-demo .elements.cards .el-card{background:#fff; border:1px solid var(--border-hairline-medium); border-radius:var(--radius-md); padding:12px; box-shadow:0 1px 0 rgba(11,19,36,.03)}
+.cp-demo .card-heading{display:flex; flex-direction:row; align-items:center; gap:5px; min-height:1.375rem; font-size:13.5px; font-weight:600; color:var(--gray-800)}
 
-.cp-demo .elements.cards.grid{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.cp-demo .card-body{display:flex; flex:1; flex-direction:column; gap:4px; font-size:12px; color:var(--fg-subtle)}
 
-.cp-demo .el-card .el-card-head{display:flex; align-items:center; gap:8px; margin-bottom:6px}
+.cp-demo .cp-icon{display:inline-flex; align-items:center; justify-content:center; color:var(--fg-subtle)}
 
-.cp-demo .el-card .el-card-head .el-title{font-size:14px; font-weight:600; color:var(--gray-800)}
-
-.cp-demo .el-card .el-card-meta{font-size:12px; color:var(--fg-subtle)}
-
-.cp-demo .el-add{margin-top:8px; display:inline-flex; align-items:center; gap:6px; padding:0 12px; height:30px; border:1px dashed var(--border-hairline-medium); border-radius:var(--radius-md); background:var(--gray-050); color:var(--gray-700); font-size:13px; cursor:pointer}
-
-.cp-demo .el-add .ic{width:13px; height:13px; color:var(--fg-subtle)}
-
-.cp-demo .opt-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:4px}
-
-@media (max-width:880px){.cp-demo .opt-grid{grid-template-columns:1fr}
- .cp-demo .elements.cards.grid{grid-template-columns:1fr}
-}
-.cp-demo .opt-cap{font-size:12px; color:var(--fg-subtle); margin:0 0 8px}
- .cp-demo .opt-cap code{font-size:11.5px}
+.cp-demo .cp-icon.small .ic{width:13px; height:13px}
 

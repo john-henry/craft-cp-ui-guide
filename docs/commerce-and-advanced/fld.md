@@ -3,15 +3,14 @@
 When you edit an entry type, user, asset, or any element’s field layout, the **field layout designer** lets you drag more than just fields onto a tab. These *UI elements* add structure and guidance to author-facing edit screens. Each shows as a draggable chip in the designer, and renders its own markup on the edit form.
 
 
-## The designer palettedraggable chips
+## The designer library
 
 This is what the addable items look like in the library, each with its icon and label. Drag one onto a tab and Craft inserts it into the layout.
 
 <div class="cp-demo" markdown="0">
 <div class="demo">
 <div class="fld-workspace">
-<div class="fld-tab-head">Content · Tab</div>
-<div class="fld-palette">
+<div class="fld-ui-library">
 <div class="fld-element"><span class="fld-element-icon"><svg class="ic"><use href="#i-heading"></use></svg></span><h4>Heading</h4></div>
 <div class="fld-element"><span class="fld-element-icon"><svg class="ic"><use href="#i-lightbulb"></use></svg></span><h4>Tip</h4></div>
 <div class="fld-element"><span class="fld-element-icon"><svg class="ic"><use href="#i-warning"></use></svg></span><h4>Warning</h4></div>
@@ -26,7 +25,7 @@ This is what the addable items look like in the library, each with its icon and 
 </div>
 
 ```html title="chip markup"
-<div class="fld-ui-element" data-type="craft-fieldlayoutelements-Heading">
+<div class="fld-element" data-type="craft-fieldlayoutelements-Heading">
   <div class="fld-element-icon"><!-- SVG icon --></div>
   <div class="field-name">
     <div class="fld-element-label"><h4>Heading</h4></div>
@@ -34,8 +33,12 @@ This is what the addable items look like in the library, each with its icon and 
 </div>
 ```
 
+The library is `.fld-ui-library` (UI elements) beside `.fld-field-library` (your actual fields), both inside `.fld-workspace`. Each chip is a `.fld-element` — the same class whether it's sitting in the library or dropped on a tab.
 
-## Tip & WarningTip · style: tip | warning
+Don't confuse the **chip** classes with the **rendered** output. `HorizontalRule`'s selector chip is `.fld-hr` and `LineBreak`'s is `.fld-br`, but neither class appears on the edit screen — that's what the sections below show.
+
+
+## Tip & Warning
 
 Author-facing callouts. Content is Markdown, and a tip can be made dismissible (Craft remembers dismissal per user). Same underlying element, two styles.
 
@@ -65,11 +68,11 @@ new Tip([
 
 ## Heading
 
-Groups related fields under a bold subheading within a tab. Renders an `<h2>` on the edit screen.
+Groups related fields under a bold subheading within a tab. Renders a **bare `<h2>`** on the edit screen — no class, so it inherits whatever the surrounding pane gives it.
 
 <div class="cp-demo" markdown="0">
 <div class="demo">
-<h2 class="fld-heading">Search engine optimization</h2>
+<h2>Search engine optimization</h2>
 </div>
 </div>
 
@@ -77,7 +80,7 @@ Groups related fields under a bold subheading within a tab. Renders an `<h2>` on
 use craft\fieldlayoutelements\Heading;
 
 new Heading(['heading' => 'Search engine optimization']);
-// renders: <h2>Search engine optimization</h2>
+// formHtml() returns: <h2>Search engine optimization</h2>
 ```
 
 
@@ -87,17 +90,22 @@ A **Horizontal Rule** draws a divider between groups of fields. A **Line Break**
 
 <div class="cp-demo" markdown="0">
 <div class="demo">
-<hr class="fld-rule"/>
-<div class="line-break-demo" style="margin-top:16px">line break — forces the next field to a new row</div>
+<hr/>
+<div class="line-break" style="margin-top:16px">line break — forces the next field to a new row</div>
 </div>
 </div>
 
 ```php
 use craft\fieldlayoutelements\{HorizontalRule, LineBreak};
 
-new HorizontalRule();  // renders <hr>
-new LineBreak();      // renders <div class="line-break"> (layout-only)
+new HorizontalRule();  // formHtml() returns: <hr>
+new LineBreak();       // formHtml() returns: <div class="line-break"></div>
 ```
+
+Both render bare — the `<hr>` carries no class at all. In the designer they're the `.fld-hr` and `.fld-br` chips, but those classes stop at the designer.
+
+!!! note
+    **The line break is invisible.** `LineBreak` renders an empty `<div class="line-break">`; it has no appearance on the edit screen and exists only to push the next field onto a new row. The dashes above are the guide drawing something where Craft draws nothing.
 
 
 ## Markdown, Template & HTML
