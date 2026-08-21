@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/craft-cp.8b1320.min.css">
+      <link rel="stylesheet" href="../../stylesheets/craft-cp.be087e.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2115,30 +2115,30 @@ in your template, and construct it in a <code>{% js %}</code> block.</p>
 </div>
 
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;_layouts/cp&quot;</span> <span class="cp">%}</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">{%</span> <span class="k">set</span> <span class="nv">title</span> <span class="o">=</span> <span class="s2">&quot;Widgets&quot;</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s1">&#39;my-plugin&#39;</span><span class="o">)</span> <span class="cp">%}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">"_layouts/cp"</span> <span class="cp">%}</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">{%</span> <span class="k">set</span> <span class="nv">title</span> <span class="o">=</span> <span class="s2">"Widgets"</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s1">'my-plugin'</span><span class="o">)</span> <span class="cp">%}</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cp">{%</span> <span class="k">do</span> <span class="nv">view.registerAssetBundle</span><span class="o">(</span><span class="s1">&#39;craft\\web\\assets\\admintable\\AdminTableAsset&#39;</span><span class="o">)</span> <span class="cp">%}</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cp">{%</span> <span class="k">do</span> <span class="nv">view.registerAssetBundle</span><span class="o">(</span><span class="s1">'craft\\web\\assets\\admintable\\AdminTableAsset'</span><span class="o">)</span> <span class="cp">%}</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">    &lt;div id=&quot;widgets-vue-admin-table&quot;&gt;&lt;/div&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">    &lt;div id="widgets-vue-admin-table"&gt;&lt;/div&gt;</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="cp">{%</span> <span class="k">js</span> <span class="cp">%}</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="x">    (() =&gt; {</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="x">        const columns = [</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="x">            { name: &#39;__slot:title&#39;,  title: Craft.t(&#39;my-plugin&#39;, &#39;Name&#39;),   sortField: true },</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="x">            { name: &#39;__slot:handle&#39;, title: Craft.t(&#39;my-plugin&#39;, &#39;Handle&#39;), sortField: true },</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="x">            { name: &#39;type&#39;,          title: Craft.t(&#39;my-plugin&#39;, &#39;Type&#39;),   sortField: true },</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="x">            { name: '__slot:title',  title: Craft.t('my-plugin', 'Name'),   sortField: true },</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="x">            { name: '__slot:handle', title: Craft.t('my-plugin', 'Handle'), sortField: true },</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="x">            { name: 'type',          title: Craft.t('my-plugin', 'Type'),   sortField: true },</span>
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="x">        ];</span>
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="x">        new Craft.VueAdminTable({</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="x">            columns,</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="x">            container: &#39;#widgets-vue-admin-table&#39;,</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="x">            emptyMessage: Craft.t(&#39;my-plugin&#39;, &#39;No widgets exist yet.&#39;),</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="x">            tableDataEndpoint: &#39;my-plugin/widgets/table-data&#39;,</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="x">            deleteAction: &#39;my-plugin/widgets/delete&#39;,</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="x">            deleteConfirmationMessage: Craft.t(&#39;my-plugin&#39;, &#39;Are you sure you want to delete “{name}”?&#39;),</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="x">            container: '#widgets-vue-admin-table',</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="x">            emptyMessage: Craft.t('my-plugin', 'No widgets exist yet.'),</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="x">            tableDataEndpoint: 'my-plugin/widgets/table-data',</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="x">            deleteAction: 'my-plugin/widgets/delete',</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="x">            deleteConfirmationMessage: Craft.t('my-plugin', 'Are you sure you want to delete “{name}”?'),</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="x">        });</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="x">    })();</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="cp">{%</span> <span class="k">endjs</span> <span class="cp">%}</span>
@@ -2147,7 +2147,7 @@ in your template, and construct it in a <code>{% js %}</code> block.</p>
 it in an IIFE keeps <code>columns</code> out of the global scope — Craft's own templates do the same.</p>
 <p>Strings must be registered for JS translation up front, or <code>Craft.t()</code> returns the source
 string:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">{%</span> <span class="k">do</span> <span class="nv">view.registerTranslations</span><span class="o">(</span><span class="s1">&#39;my-plugin&#39;</span><span class="o">,</span> <span class="o">[</span><span class="s2">&quot;Name&quot;</span><span class="o">,</span> <span class="s2">&quot;Handle&quot;</span><span class="o">,</span> <span class="s2">&quot;Type&quot;</span><span class="o">,</span> <span class="s2">&quot;No widgets exist yet.&quot;</span><span class="o">])</span> <span class="cp">%}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">{%</span> <span class="k">do</span> <span class="nv">view.registerTranslations</span><span class="o">(</span><span class="s1">'my-plugin'</span><span class="o">,</span> <span class="o">[</span><span class="s2">"Name"</span><span class="o">,</span> <span class="s2">"Handle"</span><span class="o">,</span> <span class="s2">"Type"</span><span class="o">,</span> <span class="s2">"No widgets exist yet."</span><span class="o">])</span> <span class="cp">%}</span>
 </code></pre></div>
 <h2 id="data-mode-vs-api-mode">Data mode vs API mode<a class="headerlink" href="#data-mode-vs-api-mode" title="Permanent link">&para;</a></h2>
 <p>Two ways to feed the table, and the choice costs you features.</p>
@@ -2155,24 +2155,24 @@ string:</p>
 pagination</strong>. Fine for a short, bounded list.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">VueAdminTable</span><span class="p">({</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nx">columns</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">container</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#widgets-vue-admin-table&#39;</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">tableData</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;News&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">handle</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;news&#39;</span><span class="w"> </span><span class="p">}],</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">container</span><span class="o">:</span><span class="w"> </span><span class="s1">'#widgets-vue-admin-table'</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">tableData</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'News'</span><span class="p">,</span><span class="w"> </span><span class="nx">handle</span><span class="o">:</span><span class="w"> </span><span class="s1">'news'</span><span class="w"> </span><span class="p">}],</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">});</span>
 </code></pre></div>
 <p><strong>API mode</strong> — point <code>tableDataEndpoint</code> at a controller action. You get sorting and
 pagination, but your controller must return this exact shape:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">return $this-&gt;asJson([</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="x">    &#39;pagination&#39; =&gt; [</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="x">        &#39;total&#39; =&gt; (int)$total,</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="x">        &#39;per_page&#39; =&gt; (int)$limit,</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="x">        &#39;current_page&#39; =&gt; (int)$page,</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="x">        &#39;last_page&#39; =&gt; (int)$lastPage,</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="x">        &#39;next_page_url&#39; =&gt; $nextPageUrl,</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="x">        &#39;prev_page_url&#39; =&gt; $prevPageUrl,</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="x">        &#39;from&#39; =&gt; (int)$from,</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="x">        &#39;to&#39; =&gt; (int)$to,</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="x">    'pagination' =&gt; [</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="x">        'total' =&gt; (int)$total,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="x">        'per_page' =&gt; (int)$limit,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="x">        'current_page' =&gt; (int)$page,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="x">        'last_page' =&gt; (int)$lastPage,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="x">        'next_page_url' =&gt; $nextPageUrl,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="x">        'prev_page_url' =&gt; $prevPageUrl,</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="x">        'from' =&gt; (int)$from,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="x">        'to' =&gt; (int)$to,</span>
 <a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="x">    ],</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="x">    &#39;data&#39; =&gt; $rows,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="x">    'data' =&gt; $rows,</span>
 <a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="x">]);</span>
 </code></pre></div>
 <p>Each row's array keys map to column <code>name</code>s. With <code>sortField: true</code>, the sort arrives as
@@ -2273,13 +2273,13 @@ implement it.</p>
 <h3 id="column-callback">Column callback<a class="headerlink" href="#column-callback" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;myColumn&#39;</span><span class="p">,</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">t</span><span class="p">(</span><span class="s1">&#39;site&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;My Column&#39;</span><span class="p">),</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'myColumn'</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">t</span><span class="p">(</span><span class="s1">'site'</span><span class="p">,</span><span class="w"> </span><span class="s1">'My Column'</span><span class="p">),</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="nx">callback</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;&lt;span data-icon=&quot;check&quot; title=&quot;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">t</span><span class="p">(</span><span class="s1">&#39;app&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Yes&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&quot;&gt;&lt;/span&gt;&#39;</span><span class="p">;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s1">'&lt;span data-icon="check" title="'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">t</span><span class="p">(</span><span class="s1">'app'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Yes'</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">'"&gt;&lt;/span&gt;'</span><span class="p">;</span>
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s1">''</span><span class="p">;</span>
 <a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">        </span><span class="p">},</span>
 <a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="p">},</span>
 <a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">];</span>
@@ -2658,9 +2658,9 @@ sub-actions, or a single action button.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">VueAdminTable</span><span class="p">({</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nx">buttons</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">            </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Create New Thing&#39;</span><span class="p">,</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">            </span><span class="nx">icon</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;plus&#39;</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">            </span><span class="nx">href</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;{{ cpUrl(&quot;my-plugin/thing/new&quot;) }}&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">            </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">'Create New Thing'</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">            </span><span class="nx">icon</span><span class="o">:</span><span class="w"> </span><span class="s1">'plus'</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">            </span><span class="nx">href</span><span class="o">:</span><span class="w"> </span><span class="s1">'{{ cpUrl("my-plugin/thing/new") }}'</span><span class="p">,</span>
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">            </span><span class="nx">enabled</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="p">},</span>
 <a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="p">],</span>
@@ -2733,7 +2733,7 @@ sub-actions, or a single action button.</p>
 endpoint request:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Craft</span><span class="p">.</span><span class="nx">VueAdminTable</span><span class="p">({</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nx">onQueryParams</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="nx">params</span><span class="p">.</span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="nx">params</span><span class="p">.</span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'bar'</span><span class="p">;</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">params</span><span class="p">;</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">},</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">});</span>

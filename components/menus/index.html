@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/craft-cp.8b1320.min.css">
+      <link rel="stylesheet" href="../../stylesheets/craft-cp.be087e.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1802,37 +1802,37 @@ and <code>checkboxSelect</code>. Anywhere you see a button reveal a list, this i
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">use craft\helpers\Cp;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="x">echo Cp::disclosureMenu([</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="x">    [&#39;label&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Edit&#39;), &#39;url&#39; =&gt; $widget-&gt;getCpEditUrl()],</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="x">    ['label' =&gt; Craft::t('my-plugin', 'Edit'), 'url' =&gt; $widget-&gt;getCpEditUrl()],</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="x">    [</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="x">        &#39;label&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Duplicate&#39;),</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">        &#39;description&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Creates an unpublished draft&#39;),</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="x">        &#39;action&#39; =&gt; &#39;my-plugin/widgets/duplicate&#39;,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="x">        &#39;params&#39; =&gt; [&#39;id&#39; =&gt; $widget-&gt;id],</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="x">        'label' =&gt; Craft::t('my-plugin', 'Duplicate'),</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">        'description' =&gt; Craft::t('my-plugin', 'Creates an unpublished draft'),</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="x">        'action' =&gt; 'my-plugin/widgets/duplicate',</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="x">        'params' =&gt; ['id' =&gt; $widget-&gt;id],</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="x">    ],</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="x">    [</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="x">        &#39;label&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Delete&#39;),</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="x">        &#39;action&#39; =&gt; &#39;my-plugin/widgets/delete&#39;,</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="x">        &#39;params&#39; =&gt; [&#39;id&#39; =&gt; $widget-&gt;id],</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="x">        &#39;destructive&#39; =&gt; true,</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="x">        &#39;confirm&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Are you sure?&#39;),</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="x">        'label' =&gt; Craft::t('my-plugin', 'Delete'),</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="x">        'action' =&gt; 'my-plugin/widgets/delete',</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="x">        'params' =&gt; ['id' =&gt; $widget-&gt;id],</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="x">        'destructive' =&gt; true,</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="x">        'confirm' =&gt; Craft::t('my-plugin', 'Are you sure?'),</span>
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="x">    ],</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="x">], [</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="x">    &#39;hiddenLabel&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Actions&#39;),</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="x">    'hiddenLabel' =&gt; Craft::t('my-plugin', 'Actions'),</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="x">]);</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">what that renders</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn menubtn&quot;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&quot;menu-123&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Actions&quot;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        <span class="na">data-disclosure-trigger</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&quot;false&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<div class="highlight"><span class="filename">what that renders</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn menubtn"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"menu-123"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Actions"</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        <span class="na">data-disclosure-trigger</span><span class="o">=</span><span class="s">"true"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;menu-123&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;menu menu--disclosure&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;padded&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;menu-item-1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;menu-item&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;…&quot;</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;menu-item-label&quot;</span><span class="p">&gt;</span>Edit<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"menu-123"</span> <span class="na">class</span><span class="o">=</span><span class="s">"menu menu--disclosure"</span><span class="p">&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"padded"</span><span class="p">&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">"menu-item-1"</span> <span class="na">class</span><span class="o">=</span><span class="s">"menu-item"</span> <span class="na">href</span><span class="o">=</span><span class="s">"…"</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"menu-item-label"</span><span class="p">&gt;</span>Edit<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  <span class="p">&lt;</span><span class="nt">hr</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;padded&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;padded&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  <span class="p">&lt;</span><span class="nt">hr</span> <span class="na">class</span><span class="o">=</span><span class="s">"padded"</span><span class="p">&gt;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"padded"</span><span class="p">&gt;</span>
 <a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;menu-item-3&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;menu-item error formsubmit&quot;</span> <span class="na">data-destructive</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>              <span class="na">data-action</span><span class="o">=</span><span class="s">&quot;my-plugin/widgets/delete&quot;</span> <span class="na">data-confirm</span><span class="o">=</span><span class="s">&quot;Are you sure?&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;menu-item-label&quot;</span><span class="p">&gt;</span>Delete<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">"menu-item-3"</span> <span class="na">class</span><span class="o">=</span><span class="s">"menu-item error formsubmit"</span> <span class="na">data-destructive</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>              <span class="na">data-action</span><span class="o">=</span><span class="s">"my-plugin/widgets/delete"</span> <span class="na">data-confirm</span><span class="o">=</span><span class="s">"Are you sure?"</span><span class="p">&gt;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"menu-item-label"</span><span class="p">&gt;</span>Delete<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 <a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
@@ -2050,12 +2050,12 @@ strip does.</p>
 <p>Headings and rules break the <code>&lt;ul&gt;</code> and start a new one — a group is a <code>.menu-group</code> wrapper
 with its own heading and list, not a nested <code>&lt;li&gt;</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">Cp::disclosureMenu([</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">    [&#39;heading&#39; =&gt; Craft::t(&#39;my-plugin&#39;, &#39;Sort by&#39;), &#39;items&#39; =&gt; [</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">        [&#39;label&#39; =&gt; &#39;Title&#39;, &#39;selected&#39; =&gt; true],</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">        [&#39;label&#39; =&gt; &#39;Date created&#39;],</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">    ['heading' =&gt; Craft::t('my-plugin', 'Sort by'), 'items' =&gt; [</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">        ['label' =&gt; 'Title', 'selected' =&gt; true],</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">        ['label' =&gt; 'Date created'],</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x">    ]],</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">    [&#39;hr&#39; =&gt; true],</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">    [&#39;label&#39; =&gt; &#39;Settings&#39;, &#39;url&#39; =&gt; &#39;…&#39;],</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">    ['hr' =&gt; true],</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">    ['label' =&gt; 'Settings', 'url' =&gt; '…'],</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="x">]);</span>
 </code></pre></div>
 <div class="admonition note">

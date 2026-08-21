@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/craft-cp.8b1320.min.css">
+      <link rel="stylesheet" href="../../stylesheets/craft-cp.be087e.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1657,16 +1657,16 @@
 </div>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">{{</span> <span class="nv">forms.moneyField</span><span class="o">({</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nv">label</span><span class="o">:</span> <span class="s2">&quot;Purchase Total&quot;</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s2">&quot;commerce&quot;</span><span class="o">),</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="nv">instructions</span><span class="o">:</span> <span class="s2">&quot;Minimum order value for this discount.&quot;</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s2">&quot;commerce&quot;</span><span class="o">),</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nv">id</span><span class="o">:</span> <span class="s2">&quot;purchaseTotal&quot;</span><span class="o">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nv">name</span><span class="o">:</span> <span class="s2">&quot;purchaseTotal&quot;</span><span class="o">,</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nv">label</span><span class="o">:</span> <span class="s2">"Purchase Total"</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s2">"commerce"</span><span class="o">),</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="nv">instructions</span><span class="o">:</span> <span class="s2">"Minimum order value for this discount."</span><span class="o">|</span><span class="nf">t</span><span class="o">(</span><span class="s2">"commerce"</span><span class="o">),</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nv">id</span><span class="o">:</span> <span class="s2">"purchaseTotal"</span><span class="o">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nv">name</span><span class="o">:</span> <span class="s2">"purchaseTotal"</span><span class="o">,</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nv">value</span><span class="o">:</span> <span class="nv">discount.purchaseTotal</span><span class="o">|</span><span class="nf">number</span><span class="o">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="nv">currencyLabel</span><span class="o">:</span> <span class="nv">currency</span><span class="o">,</span>   <span class="o">{</span><span class="err">#</span> <span class="nv">e.g</span><span class="err">.</span> <span class="s2">&quot;USD $&quot;</span> <span class="err">#</span><span class="o">}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="nv">currencyLabel</span><span class="o">:</span> <span class="nv">currency</span><span class="o">,</span>   <span class="o">{</span><span class="err">#</span> <span class="nv">e.g</span><span class="err">.</span> <span class="s2">"USD $"</span> <span class="err">#</span><span class="o">}</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nv">decimals</span><span class="o">:</span> <span class="nv">decimals</span><span class="o">,</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="nv">showCurrency</span><span class="o">:</span> <span class="kp">true</span><span class="o">,</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="nv">showClear</span><span class="o">:</span> <span class="kp">false</span><span class="o">,</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="nv">errors</span><span class="o">:</span> <span class="nv">discount.getErrors</span><span class="o">(</span><span class="s2">&quot;purchaseTotal&quot;</span><span class="o">),</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="nv">errors</span><span class="o">:</span> <span class="nv">discount.getErrors</span><span class="o">(</span><span class="s2">"purchaseTotal"</span><span class="o">),</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="o">})</span> <span class="cp">}}</span>
 </code></pre></div>
 

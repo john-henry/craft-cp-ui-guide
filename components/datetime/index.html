@@ -53,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/craft-cp.8b1320.min.css">
+      <link rel="stylesheet" href="../../stylesheets/craft-cp.be087e.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1723,14 +1723,14 @@ native <code>date</code>/<code>time</code> inputs instead, so the desktop markup
 </div>
 </div>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">{{</span> <span class="nv">forms.dateField</span><span class="o">({</span> <span class="nv">label</span><span class="o">:</span> <span class="s2">&quot;Post date&quot;</span><span class="o">,</span> <span class="nv">name</span><span class="o">:</span> <span class="s2">&quot;postDate&quot;</span><span class="o">,</span> <span class="nv">value</span><span class="o">:</span> <span class="nv">entry.postDate</span> <span class="o">})</span> <span class="cp">}}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">{{</span> <span class="nv">forms.dateField</span><span class="o">({</span> <span class="nv">label</span><span class="o">:</span> <span class="s2">"Post date"</span><span class="o">,</span> <span class="nv">name</span><span class="o">:</span> <span class="s2">"postDate"</span><span class="o">,</span> <span class="nv">value</span><span class="o">:</span> <span class="nv">entry.postDate</span> <span class="o">})</span> <span class="cp">}}</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">{{</span> <span class="nv">forms.timeField</span><span class="o">({</span> <span class="nv">label</span><span class="o">:</span> <span class="s2">&quot;Doors open&quot;</span><span class="o">,</span> <span class="nv">name</span><span class="o">:</span> <span class="s2">&quot;doorsAt&quot;</span><span class="o">,</span> <span class="nv">value</span><span class="o">:</span> <span class="nv">value</span> <span class="o">})</span> <span class="cp">}}</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">{{</span> <span class="nv">forms.timeField</span><span class="o">({</span> <span class="nv">label</span><span class="o">:</span> <span class="s2">"Doors open"</span><span class="o">,</span> <span class="nv">name</span><span class="o">:</span> <span class="s2">"doorsAt"</span><span class="o">,</span> <span class="nv">value</span><span class="o">:</span> <span class="nv">value</span> <span class="o">})</span> <span class="cp">}}</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cp">{{</span> <span class="nv">forms.dateTimeField</span><span class="o">({</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nv">label</span><span class="o">:</span> <span class="s2">&quot;Expiry&quot;</span><span class="o">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="nv">instructions</span><span class="o">:</span> <span class="s2">&quot;Leave blank to never expire.&quot;</span><span class="o">,</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nv">name</span><span class="o">:</span> <span class="s2">&quot;expiryDate&quot;</span><span class="o">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nv">label</span><span class="o">:</span> <span class="s2">"Expiry"</span><span class="o">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="nv">instructions</span><span class="o">:</span> <span class="s2">"Leave blank to never expire."</span><span class="o">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nv">name</span><span class="o">:</span> <span class="s2">"expiryDate"</span><span class="o">,</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="nv">value</span><span class="o">:</span> <span class="nv">entry.expiryDate</span><span class="o">,</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="o">})</span> <span class="cp">}}</span>
 </code></pre></div>
@@ -1739,13 +1739,13 @@ field. <code>dateTimeField</code> sets <code>fieldset: true</code>, since it gro
 <h2 id="what-gets-submitted">What gets submitted<a class="headerlink" href="#what-gets-submitted" title="Permanent link">&para;</a></h2>
 <p>A date field doesn't post a single string. It posts an array — the visible value plus the
 locale and timezone needed to interpret it:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>postDate[date]      =&gt; &quot;7/16/2026&quot;   // formatted in the user&#39;s locale, not ISO
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>postDate[locale]    =&gt; &quot;en-US&quot;
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>postDate[timezone]  =&gt; &quot;America/Los_Angeles&quot;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>postDate[date]      =&gt; "7/16/2026"   // formatted in the user's locale, not ISO
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>postDate[locale]    =&gt; "en-US"
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>postDate[timezone]  =&gt; "America/Los_Angeles"
 </code></pre></div>
 <p><code>dateTimeField</code> adds <code>postDate[time]</code>, and emits the locale and timezone once rather than per
 control. Craft's <code>DateTimeHelper</code> normalises this shape for you, so prefer</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">$date = DateTimeHelper::toDateTime($request-&gt;getBodyParam(&#39;postDate&#39;));</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">$date = DateTimeHelper::toDateTime($request-&gt;getBodyParam('postDate'));</span>
 </code></pre></div>
 <p>over reading <code>[date]</code> directly — parsing the localised string yourself will break for any user
 whose formatting locale isn't yours. Set <code>outputLocaleParam: false</code> or <code>outputTzParam: false</code>
