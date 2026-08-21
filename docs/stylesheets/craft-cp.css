@@ -62,7 +62,10 @@
 
 .cp-demo a:hover{text-decoration:underline}
 
-.cp-demo code{font-family:var(--mono); font-size:.86em}
+/* .md-typeset code (0,2,1 specificity) sets a theme-driven background-color that flips dark
+   under MkDocs' dark palette. Match its specificity via .md-typeset .cp-demo code so our
+   always-light demo styling wins (this stylesheet loads after main.css, so ties go to us). */
+.cp-demo code, .md-typeset .cp-demo code{font-family:var(--mono); font-size:.86em; background:transparent; color:inherit}
 
 
 .cp-demo h3{font-size:16px; color:var(--gray-800); margin:34px 0 4px; font-weight:600}
@@ -486,7 +489,7 @@
 
 .cp-demo .search-container{position:relative; flex:1; max-width:280px}
 
-.cp-demo .search-container input{width:100%; height:var(--ui-control-height); padding:0 10px 0 32px; border:1px solid var(--fg-input); border-radius:var(--radius-lg); font-size:14px}
+.cp-demo .search-container input{width:100%; height:var(--ui-control-height); padding:0 10px 0 32px; border:1px solid var(--fg-input); border-radius:var(--radius-lg); font-size:14px; background:#fff; color:var(--gray-800)}
 
 .cp-demo .search-container::before{content:''; position:absolute; left:11px; top:50%; width:11px; height:11px; border:2px solid var(--fg-subtle); border-radius:50%; transform:translateY(-60%)}
 
