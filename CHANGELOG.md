@@ -6,7 +6,7 @@ Notable changes to this guide. The guide isn't versioned against a release numbe
 
 ### Fixed
 
-- **Demo `code` and search inputs** — MkDocs' dark palette was leaking into the live previews: `.md-typeset code`'s theme-driven background outranked the demo stylesheet's `code` rule, and `.search-container input` had no explicit color, so it picked up Material's dark-mode text color. Both are now pinned to the guide's always-light demo styling regardless of site theme. ([JOH-6](https://github.com/john-henry/craft-cp-ui-guide/issues/1))
+- **Demo `code`, search inputs, and unstyled text** — MkDocs' dark palette was leaking into the live previews. `.md-typeset code`'s theme-driven background outranked the demo stylesheet's `code` rule; `.search-container input` had no explicit color, so it picked up Material's dark-mode text color; and plain text without its own color (spacing-scale values, radius captions) was inheriting Material's theme color via dead `.cp-demo body` / `.cp-demo html` selectors that never matched anything (a `markdown="0"` block has no nested `<html>`/`<body>`). All are now pinned to the guide's always-light demo styling regardless of site theme. ([JOH-6](https://github.com/john-henry/craft-cp-ui-guide/issues/1))
 
 ## 2026-07-14 — Craft 5.10 accuracy pass
 
