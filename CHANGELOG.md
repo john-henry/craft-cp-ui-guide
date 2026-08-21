@@ -2,6 +2,12 @@
 
 Notable changes to this guide. The guide isn't versioned against a release number — it tracks the Craft CMS 5.x control panel, so entries are dated. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-08-21 — Dark mode fixes
+
+### Fixed
+
+- **Demo `code` and search inputs** — MkDocs' dark palette was leaking into the live previews: `.md-typeset code`'s theme-driven background outranked the demo stylesheet's `code` rule, and `.search-container input` had no explicit color, so it picked up Material's dark-mode text color. Both are now pinned to the guide's always-light demo styling regardless of site theme. ([JOH-6](https://github.com/john-henry/craft-cp-ui-guide/issues/1))
+
 ## 2026-07-14 — Craft 5.10 accuracy pass
 
 Corrections after re-verifying the guide against `craftcms/cms` 5.10.10 source, plus a navigation fix.
