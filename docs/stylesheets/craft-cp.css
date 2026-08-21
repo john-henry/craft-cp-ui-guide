@@ -50,11 +50,15 @@
 
 .cp-demo *{box-sizing:border-box}
 
-.cp-demo html{scroll-behavior:smooth}
-
-.cp-demo body{
-  margin:0; font-family:var(--sans); font-size:var(--font-size); line-height:var(--lh);
-  color:var(--text-color); background:var(--body-bg);
+/* Baseline text color/font for the demo wrapper itself. This used to live on ".cp-demo body" /
+   ".cp-demo html", but a markdown="0" block never contains a nested <html>/<body> — those rules
+   never matched anything. In light mode that went unnoticed because Material's own inherited
+   text color happened to render dark; under MkDocs' dark palette it inherits Material's light
+   --md-typeset-color instead, washing out any text here that doesn't set its own color (plain
+   text in .spacing-row, radius captions, etc). */
+.cp-demo{
+  font-family:var(--sans); font-size:var(--font-size); line-height:var(--lh);
+  color:var(--text-color);
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
